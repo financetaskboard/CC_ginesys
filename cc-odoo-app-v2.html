@@ -1042,19 +1042,24 @@ async function startPost(){
 
     setPostStep('journal','Looking up journal and accounts…');
     const jnl=S.cfg.jnl||'Miscellaneous Operations';
-    const journals=await kw('account.journal','search_read',[[['name','=',jnl]]],{fields:['id','name','company_id'],limit:1});
-    if(!journals.length)throw new Error(`Journal "${jnl}" not found in Odoo. Check Settings → Journal name.`);
-    const jid=journals[0].id;
 
-    // ★ Resolve company_id — prefer Settings name, fall back to journal's company
-    let companyId=journals[0].company_id?.[0]||false;
+    // ★ Resolve company FIRST so journal search is filtered to the right company
+    let companyId=false;
     if(S.cfg.company){
       const cos=await kw('res.company','search_read',[[['name','ilike',S.cfg.company.trim()]]],{fields:['id','name'],limit:5});
       const exact=cos.find(c=>c.name.toLowerCase()===S.cfg.company.toLowerCase().trim());
       const match=exact||cos[0];
       if(match){companyId=match.id;addPostLog('ok',`Company: ${match.name} (ID ${match.id})`);}
-      else addPostLog('in',`Company "${S.cfg.company}" not found — using journal default`);
+      else addPostLog('in',`Company "${S.cfg.company}" not found — will use journal's company`);
     }
+
+    // Build journal domain — filter by company when known to avoid cross-company mismatch
+    const jnlDomain=companyId?[['name','=',jnl],['company_id','=',companyId]]:[['name','=',jnl]];
+    const journals=await kw('account.journal','search_read',[jnlDomain],{fields:['id','name','company_id'],limit:1});
+    if(!journals.length)throw new Error(`Journal "${jnl}" not found${companyId?' for company "'+S.cfg.company+'"':''} in Odoo. Check Settings → Journal name.`);
+    const jid=journals[0].id;
+    // Fall back to journal's own company if no company was configured
+    if(!companyId)companyId=journals[0].company_id?.[0]||false;
 
     const ccAccs=await kw('account.account','search_read',[[['code','=',ccCode]]],{fields:['id','name'],limit:1});if(!ccAccs.length)throw new Error(`CC account ${ccCode} not found`);const ccId=ccAccs[0].id;
     const credAccs=await kw('account.account','search_read',[[['code','=',credCode]]],{fields:['id','name'],limit:1});if(!credAccs.length)throw new Error(`Creditor account ${credCode} not found`);const credId=credAccs[0].id;
