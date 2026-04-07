@@ -24,8 +24,6 @@ html,body{height:100%;font-family:var(--ss);font-size:14px;color:var(--tx);backg
 button{font-family:var(--ss);cursor:pointer;border:none;outline:none}
 input,textarea,select{font-family:var(--ss);outline:none;color:var(--tx)}
 .app{display:flex;height:100vh;overflow:hidden}
-
-/* ─ SIDEBAR ─ */
 .sb{width:var(--sw);background:var(--sb);display:flex;flex-direction:column;flex-shrink:0;overflow:hidden}
 .logo{display:flex;align-items:center;gap:10px;padding:18px 16px 14px;border-bottom:1px solid var(--sbr)}
 .lm{width:28px;height:28px;background:var(--ac);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--sr);font-size:15px;color:white;flex-shrink:0}
@@ -45,27 +43,19 @@ input,textarea,select{font-family:var(--ss);outline:none;color:var(--tx)}
 .cdot{width:6px;height:6px;border-radius:50%;background:#3F3F46;flex-shrink:0}
 .cdot.ok{background:var(--gn);box-shadow:0 0 5px rgba(21,128,61,.5)}
 .cdot.er{background:var(--rd)}
-
-/* ─ MAIN ─ */
 .main{flex:1;display:flex;flex-direction:column;overflow:hidden}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:0 22px;height:52px;background:var(--sf);border-bottom:1px solid var(--bd);flex-shrink:0;gap:12px}
 .topbar h1{font-family:var(--sr);font-weight:300;font-size:19px;letter-spacing:-.2px;white-space:nowrap}
 .tba{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .content{flex:1;overflow-y:auto;padding:22px}
 .view{display:none}.view.active{display:block}
-
-/* ─ CARDS ─ */
 .card{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:18px;box-shadow:var(--sh)}
 .ctitle{font-size:11px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
-
-/* ─ STAT GRID ─ */
 .sgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px;margin-bottom:18px}
 .sc{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);padding:15px;box-shadow:var(--sh)}
 .slbl{font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
 .sv{font-family:var(--mn);font-size:20px}.sv.ac{color:var(--ac)}.sv.gn{color:var(--gn)}.sv.aw{color:var(--aw)}.sv.pu{color:var(--pu)}
 .ssub{font-size:10px;color:var(--t2);margin-top:3px}
-
-/* ─ BUTTONS ─ */
 .btn{display:inline-flex;align-items:center;gap:5px;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:500;transition:all .12s;border:none;cursor:pointer;white-space:nowrap}
 .btn-p{background:var(--ac);color:white}.btn-p:hover{opacity:.87}
 .btn-s{background:transparent;color:var(--tx);border:1px solid var(--bd)}.btn-s:hover{background:var(--bg)}
@@ -75,8 +65,6 @@ input,textarea,select{font-family:var(--ss);outline:none;color:var(--tx)}
 .btn-sm{padding:5px 10px;font-size:12px;border-radius:5px}
 .btn-xs{padding:2px 7px;font-size:11px;border-radius:4px}
 .btn:disabled{opacity:.38;cursor:not-allowed}
-
-/* ─ FORMS ─ */
 .fg{margin-bottom:13px}
 .fl{display:block;font-size:12px;color:var(--t2);margin-bottom:5px}
 .fi{width:100%;padding:8px 11px;border:1px solid var(--bd);border-radius:6px;font-size:13px;color:var(--tx);background:var(--bg);transition:border .12s}
@@ -84,14 +72,10 @@ input,textarea,select{font-family:var(--ss);outline:none;color:var(--tx)}
 .fgrid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .fgrid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
 .fsec{font-size:13px;font-weight:500;padding-bottom:8px;border-bottom:1px solid var(--bd);margin-bottom:13px}
-
-/* ─ PILL SELECTOR ─ */
 .pill-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
 .pill{padding:6px 13px;border-radius:20px;border:1.5px solid var(--bd);font-size:12px;cursor:pointer;transition:all .12s;background:white;color:var(--tx);font-family:var(--ss)}
 .pill:hover{border-color:var(--ac);color:var(--ac)}
 .pill.active{background:var(--ac);color:white;border-color:var(--ac)}
-
-/* ─ TABLE ─ */
 .tc{background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
 .ttbar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--bd);flex-wrap:wrap}
 .si{padding:7px 11px;border:1px solid var(--bd);border-radius:6px;font-size:13px;background:var(--bg);flex:1;min-width:150px;max-width:240px}
@@ -114,35 +98,25 @@ td input[type=text]{padding:3px 7px;border:1px solid var(--bd);border-radius:4px
 td input[type=text]:focus{border-color:var(--ac)}
 td input[type=text].ok{background:var(--gb);border-color:var(--gd)}
 td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
-
-/* ─ BADGE ─ */
 .badge{display:inline-flex;align-items:center;justify-content:center;padding:2px 7px;border-radius:4px;font-size:10px;font-family:var(--mn);border:1px solid transparent}
 .dr{background:var(--rb);color:var(--rd);border-color:var(--rbd)}
 .cr{background:var(--gb);color:var(--gn);border-color:var(--gd)}
 .p-ok{background:var(--gb);color:var(--gn);border-color:var(--gd);font-size:10px;padding:2px 7px;border-radius:4px;font-family:var(--mn)}
 .p-miss{background:var(--awb);color:var(--aw);border-color:var(--awd);font-size:10px;padding:2px 7px;border-radius:4px;font-family:var(--mn)}
 .p-none{background:var(--bg);color:var(--t2);border-color:var(--bd);font-size:10px;padding:2px 7px;border-radius:4px;font-family:var(--mn);border:1px solid var(--bd)}
-
-/* ─ DROPZONE ─ */
 .dz{border:2px dashed var(--bd);border-radius:var(--r);padding:44px 24px;text-align:center;cursor:pointer;transition:all .15s;color:var(--t2)}
 .dz:hover,.dz.over{border-color:var(--ac);background:var(--al);color:var(--ac)}
 .dz-icon{font-size:32px;display:block;margin-bottom:10px}
 .dz-ttl{font-size:14px;margin-bottom:3px}
 .dz-sub{font-size:12px}
 .dz-file{font-family:var(--mn);font-size:11px;color:var(--gn);margin-top:8px;display:none}
-
-/* ─ TABS ─ */
 .tabs{display:flex;border-bottom:1px solid var(--bd);margin-bottom:15px}
 .tab{padding:8px 15px;background:none;color:var(--t2);border:none;border-bottom:2px solid transparent;font-family:var(--ss);font-size:13px;cursor:pointer;margin-bottom:-1px}
 .tab.active{color:var(--ac);border-bottom-color:var(--ac)}
-
-/* ─ TOAST ─ */
 #toast{position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;flex-direction:column;gap:6px;pointer-events:none}
 .ti{background:var(--tx);color:white;padding:10px 15px;border-radius:8px;font-size:13px;opacity:0;transform:translateY(8px);transition:all .22s;max-width:360px;box-shadow:0 4px 14px rgba(0,0,0,.2);line-height:1.4}
 .ti.show{opacity:1;transform:translateY(0)}
 .ti.ok{background:var(--gn)}.ti.er{background:var(--rd)}.ti.aw{background:var(--aw)}
-
-/* ─ MODAL ─ */
 .mo{position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;transition:opacity .18s;pointer-events:none}
 .mo.show{opacity:1;pointer-events:all}
 .md{background:white;border-radius:10px;width:100%;max-width:500px;box-shadow:0 24px 60px rgba(0,0,0,.18);transform:translateY(8px);transition:transform .18s}
@@ -151,41 +125,25 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
 .mttl{font-family:var(--sr);font-weight:400;font-size:18px}
 .mb{padding:18px 20px}
 .mf{padding:12px 20px;border-top:1px solid var(--bd);display:flex;gap:8px;justify-content:flex-end}
-
-/* ─ LOG ─ */
 .log{background:#111;border-radius:var(--r);padding:11px 14px;font-family:var(--mn);font-size:11px;max-height:170px;overflow-y:auto;line-height:2;margin-top:12px;display:none}
 .ll{color:#888}.ll.ok{color:#4ade80}.ll.er{color:#f87171}.ll.in{color:#93c5fd}
-
-/* ─ SPIN ─ */
 .spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.25);border-top-color:white;border-radius:50%;animation:sp .65s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
-
-/* ─ IMPORT TOOLBAR ─ */
 .imp-toolbar{display:flex;align-items:center;gap:10px;padding:11px 15px;background:var(--bg);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px;flex-wrap:wrap}
 .imp-toolbar label{font-size:12px;color:var(--t2);font-weight:500;white-space:nowrap}
-
-/* ─ CC ACCOUNT PILL SELECT ─ */
 .cc-pills{display:flex;gap:6px;flex-wrap:wrap}
 .cc-pill{padding:5px 12px;border-radius:20px;border:1.5px solid var(--bd);font-size:12px;cursor:pointer;transition:all .12s;background:white;font-family:var(--mn);color:var(--tx)}
 .cc-pill:hover{border-color:var(--ac)}
 .cc-pill.active{background:var(--ac);color:white;border-color:var(--ac)}
-
-/* ─ FY SELECTOR ─ */
 .fy-select{padding:6px 11px;border:1.5px solid var(--bd);border-radius:6px;font-size:12px;background:white;color:var(--tx);cursor:pointer;font-family:var(--mn)}
 .fy-select:focus{border-color:var(--ac);outline:none}
-
-/* ─ BBAR ─ */
 .bbar{display:flex;align-items:center;gap:10px;padding:8px 13px;background:var(--al);border:1px solid var(--am);border-radius:6px;margin-bottom:11px;font-size:13px;flex-wrap:wrap}
 .bbar.hidden{display:none}
-
-/* ─ PARTNER TABLE ─ */
 .prow{display:grid;grid-template-columns:140px 1fr 130px auto;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--bd)}
 .prow:last-child{border-bottom:none}
 .pmrch{font-family:var(--mn);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pinput{width:100%;padding:5px 9px;border:1px solid var(--bd);border-radius:5px;font-size:12px;background:var(--bg)}
 .pinput:focus{border-color:var(--ac);background:white;outline:none}
-
-/* ─ PROGRESS STEP MODAL ─ */
 .step-list{display:flex;flex-direction:column;gap:2px;margin-bottom:16px}
 .step-row{display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:6px;transition:background .18s}
 .step-row.active{background:var(--al)}
@@ -200,22 +158,14 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
 .step-badge{background:var(--ac);color:#fff;border-radius:10px;padding:2px 10px;font-size:10.5px;font-weight:700;font-family:var(--mn)}
 .step-badge.gn{background:var(--gn)}.step-badge.aw{background:var(--aw)}
 .spin-sm{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.3);border-top-color:white;border-radius:50%;animation:sp .65s linear infinite}
-
-/* ─ DUPLICATE BADGE ─ */
 .dup-badge{background:#FFF7ED;color:#C2410C;border:1px solid #FDBA74;font-size:10px;padding:2px 7px;border-radius:4px;font-family:var(--mn)}
 .dup-row td{background:#FFF7ED!important}
 .already-badge{background:var(--gb);color:var(--gn);border:1px solid var(--gd);font-size:10px;padding:2px 7px;border-radius:4px;font-family:var(--mn)}
-
-/* ─ FETCH MODAL INFO BAR ─ */
 .finfo{display:flex;align-items:center;gap:9px;padding:10px 13px;background:var(--al);border:1px solid var(--am);border-radius:6px;font-size:12px;margin-bottom:14px;color:#1E40AF}
-
+.notice{display:flex;align-items:flex-start;gap:9px;padding:10px 13px;border-radius:6px;font-size:12px;margin-bottom:14px}
 .notice.info{background:var(--al);border:1px solid var(--am);color:#1E40AF}
 .notice.warn{background:var(--awb);border:1px solid var(--awd);color:var(--aw)}
-
-/* ─ DEBUG ─ */
 .dbg{background:#111;color:#aaa;border-radius:var(--r);padding:12px;font-family:var(--mn);font-size:11px;max-height:200px;overflow-y:auto;white-space:pre-wrap;line-height:1.7;display:none;margin-top:8px}
-
-/* ─ UTILS ─ */
 .hidden{display:none!important}
 .mt2{margin-top:8px}.mt3{margin-top:12px}.mt4{margin-top:16px}.mb2{margin-bottom:8px}.mb3{margin-bottom:12px}.mb4{margin-bottom:16px}
 .t2{color:var(--t2)}.txs{font-size:12px}.txxs{font-size:11px}
@@ -225,8 +175,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
 </head>
 <body>
 <div class="app">
-
-<!-- SIDEBAR -->
 <aside class="sb">
   <div class="logo">
     <div class="lm">C</div>
@@ -245,8 +193,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
     <div class="cst"><div class="cdot" id="cdot"></div><span id="ctxt" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px">Not connected</span></div>
   </div>
 </aside>
-
-<!-- MAIN -->
 <div class="main">
   <header class="topbar">
     <h1 id="ptitle">Dashboard</h1>
@@ -254,7 +200,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
   </header>
   <div class="content">
 
-    <!-- ══ DASHBOARD ══ -->
+    <!-- DASHBOARD -->
     <div class="view active" id="view-dashboard">
       <div class="sgrid">
         <div class="sc"><div class="slbl">Partners mapped</div><div class="sv pu" id="ds-p">0</div><div class="ssub">merchants with Odoo partner</div></div>
@@ -274,7 +220,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
             <div style="color:var(--t2);font-size:10px">Ref: date + merchant description</div>
           </div>
           <div style="margin-top:14px;display:flex;flex-direction:column;gap:9px">
-            <div style="display:flex;gap:9px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--al);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--ac);flex-shrink:0;font-family:var(--mn)">1</div><div class="txs t2">Configure Settings — Odoo URL, DB, login</div></div>
+            <div style="display:flex;gap:9px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--al);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--ac);flex-shrink:0;font-family:var(--mn)">1</div><div class="txs t2">Configure Settings — Odoo URL, DB, login, <strong>Company</strong></div></div>
             <div style="display:flex;gap:9px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--al);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--ac);flex-shrink:0;font-family:var(--mn)">2</div><div class="txs t2">Add partners in <strong>Partner Master</strong> — map merchant → Odoo partner</div></div>
             <div style="display:flex;gap:9px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--al);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--ac);flex-shrink:0;font-family:var(--mn)">3</div><div class="txs t2">Import statement — select CC account + FY, upload PDF</div></div>
             <div style="display:flex;gap:9px;align-items:flex-start"><div style="width:20px;height:20px;background:var(--al);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--ac);flex-shrink:0;font-family:var(--mn)">4</div><div class="txs t2">Post to Odoo — Dr Creditors / Cr CC account, partner tagged</div></div>
@@ -283,9 +229,8 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       </div>
     </div>
 
-    <!-- ══ IMPORT ══ -->
+    <!-- IMPORT -->
     <div class="view" id="view-import">
-      <!-- CC Account + FY selector bar -->
       <div class="imp-toolbar">
         <label>CC Account:</label>
         <div class="cc-pills" id="cc-pills">
@@ -297,26 +242,14 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
         <label>Statement Month:</label>
         <select class="fy-select" id="imp-mo" onchange="saveMoYr()">
           <option value="">— All months —</option>
-          <option value="01">January</option>
-          <option value="02">February</option>
-          <option value="03">March</option>
-          <option value="04">April</option>
-          <option value="05">May</option>
-          <option value="06">June</option>
-          <option value="07">July</option>
-          <option value="08">August</option>
-          <option value="09">September</option>
-          <option value="10">October</option>
-          <option value="11">November</option>
-          <option value="12">December</option>
+          <option value="01">January</option><option value="02">February</option><option value="03">March</option>
+          <option value="04">April</option><option value="05">May</option><option value="06">June</option>
+          <option value="07">July</option><option value="08">August</option><option value="09">September</option>
+          <option value="10">October</option><option value="11">November</option><option value="12">December</option>
         </select>
         <select class="fy-select" id="imp-yr" onchange="saveMoYr()">
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2025" selected>2025</option>
-          <option value="2026">2026</option>
-          <option value="2027">2027</option>
+          <option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option>
+          <option value="2025" selected>2025</option><option value="2026">2026</option><option value="2027">2027</option>
         </select>
         <div style="width:1px;height:24px;background:var(--bd);margin:0 4px"></div>
         <label>Financial Year:</label>
@@ -330,7 +263,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       </div>
       <div class="notice info">
         <span>ℹ</span>
-        <div>Only <strong>expense (DR) transactions</strong> are imported. CC payment rows (PAYMENT RECEIVED etc.) are excluded automatically. Use Paste text tab if PDF upload shows no results.</div>
+        <div>Only <strong>expense (DR) transactions</strong> are imported. CC payment rows are excluded automatically. Use Paste text tab if PDF upload shows no results.</div>
       </div>
       <div class="card" style="max-width:660px">
         <div class="tabs">
@@ -347,7 +280,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
           <input type="file" id="fin" accept=".pdf" style="display:none">
         </div>
         <div id="ibody-txt" class="hidden">
-          <div class="txs t2 mb3">Open PDF → Select All (Ctrl+A) → Copy (Ctrl+C) → Paste here. <strong>Use if PDF shows no transactions.</strong></div>
+          <div class="txs t2 mb3">Open PDF → Select All (Ctrl+A) → Copy (Ctrl+C) → Paste here.</div>
           <textarea class="fi" id="paste-txt" rows="12" style="resize:vertical" placeholder="Paste statement text here…"></textarea>
         </div>
         <div style="display:flex;align-items:center;gap:10px;margin-top:14px;flex-wrap:wrap">
@@ -361,21 +294,16 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       </div>
     </div>
 
-    <!-- ══ TRANSACTIONS ══ -->
+    <!-- TRANSACTIONS -->
     <div class="view" id="view-transactions">
-      <!-- Session info bar -->
       <div style="display:flex;align-items:center;gap:12px;padding:9px 14px;background:var(--sf);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:12px;font-size:12px;flex-wrap:wrap;box-shadow:var(--sh)">
-        <span class="t2">CC Account:</span>
-        <span style="font-family:var(--mn);color:var(--ac)" id="tx-cc-lbl">—</span>
+        <span class="t2">CC Account:</span><span style="font-family:var(--mn);color:var(--ac)" id="tx-cc-lbl">—</span>
         <span style="color:var(--bd)">|</span>
-        <span class="t2">FY:</span>
-        <span style="font-family:var(--mn)" id="tx-fy-lbl">—</span>
+        <span class="t2">FY:</span><span style="font-family:var(--mn)" id="tx-fy-lbl">—</span>
         <span style="color:var(--bd)">|</span>
-        <span class="t2">Creditor account:</span>
-        <span style="font-family:var(--mn);color:var(--gn)">130001 Creditors</span>
+        <span class="t2">Creditor account:</span><span style="font-family:var(--mn);color:var(--gn)">130001 Creditors</span>
         <button class="btn btn-xs btn-s" style="margin-left:auto" onclick="nav(document.querySelector('[data-view=import]'))">+ Import more</button>
       </div>
-      <!-- Bulk bar -->
       <div class="bbar hidden" id="bbar">
         <span id="bbar-cnt" style="font-weight:500"></span>
         <div style="margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
@@ -391,27 +319,15 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
           <input type="text" class="si" id="tx-s" placeholder="Search description or merchant…" oninput="rT()">
           <select class="fsel" id="tx-mo" onchange="rT()">
             <option value="">All months</option>
-            <option value="01">January</option>
-            <option value="02">February</option>
-            <option value="03">March</option>
-            <option value="04">April</option>
-            <option value="05">May</option>
-            <option value="06">June</option>
-            <option value="07">July</option>
-            <option value="08">August</option>
-            <option value="09">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
+            <option value="01">January</option><option value="02">February</option><option value="03">March</option>
+            <option value="04">April</option><option value="05">May</option><option value="06">June</option>
+            <option value="07">July</option><option value="08">August</option><option value="09">September</option>
+            <option value="10">October</option><option value="11">November</option><option value="12">December</option>
           </select>
           <select class="fsel" id="tx-yr" onchange="rT()">
             <option value="">All years</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
+            <option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option>
+            <option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option>
           </select>
           <select class="fsel" id="tx-st" onchange="rT()">
             <option value="">All status</option>
@@ -429,13 +345,8 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
           <table>
             <thead><tr>
               <th style="width:32px"><input type="checkbox" id="sel-all" onchange="toggleAll(this.checked)"></th>
-              <th>Date</th>
-              <th>Merchant</th>
-              <th>Description</th>
-              <th style="text-align:right">Amount</th>
-              <th>Odoo Partner</th>
-              <th>Status</th>
-              <th style="width:60px"></th>
+              <th>Date</th><th>Merchant</th><th>Description</th>
+              <th style="text-align:right">Amount</th><th>Odoo Partner</th><th>Status</th><th style="width:60px"></th>
             </tr></thead>
             <tbody id="tx-body"><tr><td colspan="8" class="tbl-empty">No transactions yet — import a statement to begin</td></tr></tbody>
           </table>
@@ -451,7 +362,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       <div class="log" id="logp"></div>
     </div>
 
-    <!-- ══ PARTNER MASTER ══ -->
+    <!-- PARTNER MASTER -->
     <div class="view" id="view-partners">
       <div class="card">
         <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px">
@@ -472,7 +383,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
           <span class="txs t2" id="part-cnt"></span>
           <span id="sync-note" class="txs" style="display:none"></span>
         </div>
-        <!-- Header -->
         <div style="display:grid;grid-template-columns:150px 1fr 140px auto;gap:8px;padding:5px 0 8px;border-bottom:2px solid var(--bd);font-size:10px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.05em">
           <div>Merchant key</div><div>Odoo partner name</div><div>Status</div><div></div>
         </div>
@@ -482,7 +392,7 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       </div>
     </div>
 
-    <!-- ══ SETTINGS ══ -->
+    <!-- SETTINGS -->
     <div class="view" id="view-settings">
       <div style="max-width:620px">
         <div class="card mb4">
@@ -493,12 +403,15 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
               <strong>CORS blocked — file:// detected.</strong> Your browser blocks all Odoo requests when this HTML is opened by double-clicking.<br><br>
               <strong style="color:var(--tx)">✅ One-click fix:</strong> Download the launcher below, put it in the <em>same folder</em> as this HTML file, then double-click it.<br>
               <div style="margin-top:10px">
-                <button class="btn btn-p btn-sm" onclick="dlLauncher()" style="background:#D97706;border:none">
-                  ⬇ Download START-CC-Odoo.bat
-                </button>
+                <button class="btn btn-p btn-sm" onclick="dlLauncher()" style="background:#D97706;border:none">⬇ Download START-CC-Odoo.bat</button>
               </div>
               <div style="margin-top:8px;font-size:11px;color:var(--t2)">Requires Python (python.org). The launcher starts a local server and opens the app in your browser automatically.</div>
             </div>
+          </div>
+          <!-- ★ NEW: Company field -->
+          <div class="fg">
+            <label class="fl">Company name <span class="t2">(exact name in Odoo — fixes multi-company "Incompatible companies" error)</span></label>
+            <input class="fi" id="s-company" placeholder="e.g. ginesys">
           </div>
           <div class="fgrid2">
             <div class="fg"><label class="fl">Odoo URL</label><input class="fi" id="s-url" type="url" placeholder="https://ginesys.odoo.com"></div>
@@ -507,9 +420,8 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
             <div class="fg"><label class="fl">Password</label><input class="fi" id="s-pass" type="password"></div>
           </div>
           <div class="fg">
-            <label class="fl">CORS Proxy URL <span class="t2">(optional — only if browser blocks direct access)</span></label>
+            <label class="fl">CORS Proxy URL <span class="t2">(optional)</span></label>
             <input class="fi" id="s-proxy" type="url" placeholder="e.g. https://corsproxy.io/?">
-            <div class="txxs t2 mt2">If Odoo rejects requests due to CORS, paste a proxy URL. The proxy must forward ?target= param. Leave blank for direct connection.</div>
           </div>
           <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
             <button class="btn btn-p" onclick="saveCfg()">Save</button>
@@ -517,7 +429,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
             <span class="txs" id="s-note" style="display:none"></span>
           </div>
         </div>
-
         <div class="card mb4">
           <div class="fsec">CC Accounts &amp; Creditor</div>
           <div class="notice info mb3">
@@ -543,7 +454,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
           </div>
           <button class="btn btn-p" onclick="saveCfg()">Save</button>
         </div>
-
         <div class="card">
           <div class="fsec">Data management</div>
           <div style="display:flex;flex-direction:column">
@@ -555,43 +465,31 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
       </div>
     </div>
 
-  </div><!-- /content -->
-</div><!-- /main -->
-</div><!-- /app -->
+  </div>
+</div>
+</div>
 
 <!-- Add Partner Modal -->
 <div class="mo" id="mo-add">
   <div class="md">
     <div class="mh"><div class="mttl">Add partner mapping</div><button class="btn btn-g btn-xs" onclick="closeMo('mo-add')" style="font-size:18px;padding:2px 8px">✕</button></div>
     <div class="mb">
-      <div class="fg"><label class="fl">Merchant key <span class="t2">(as shown in Merchant column of transactions)</span></label><input class="fi" id="nm-m" placeholder="e.g. ATLASSIAN or BHARTI AIRTEL"></div>
-      <div class="fg"><label class="fl">Odoo partner name <span class="t2">(exact name in Odoo res.partner)</span></label><input class="fi" id="nm-p" placeholder="e.g. Atlassian Network Services Inc"></div>
-      <div class="notice info" style="margin-top:8px"><span>ℹ</span><div>The name is matched against Odoo using case-insensitive search. Click "Sync with Odoo" after adding to verify.</div></div>
+      <div class="fg"><label class="fl">Merchant key</label><input class="fi" id="nm-m" placeholder="e.g. ATLASSIAN"></div>
+      <div class="fg"><label class="fl">Odoo partner name</label><input class="fi" id="nm-p" placeholder="e.g. Atlassian Network Services Inc"></div>
     </div>
     <div class="mf"><button class="btn btn-s" onclick="closeMo('mo-add')">Cancel</button><button class="btn btn-p" onclick="addPartModal()">Add</button></div>
   </div>
 </div>
 
-<!-- ══ FETCH FROM ODOO MODAL ══ -->
+<!-- FETCH FROM ODOO MODAL -->
 <div class="mo" id="mo-fetch">
   <div class="md" style="max-width:500px">
-    <div class="mh">
-      <div class="mttl">⬇ Fetch from Odoo</div>
-      <button class="btn btn-g btn-xs" onclick="closeFetchModal()" style="font-size:18px;padding:2px 8px">✕</button>
-    </div>
-
-    <!-- Config panel -->
+    <div class="mh"><div class="mttl">⬇ Fetch from Odoo</div><button class="btn btn-g btn-xs" onclick="closeFetchModal()" style="font-size:18px;padding:2px 8px">✕</button></div>
     <div id="fetch-cfg" class="mb">
       <div class="finfo">ℹ Pulls existing CC journal entries from Odoo to detect duplicates already posted.</div>
       <div class="fgrid2">
-        <div class="fg">
-          <label class="fl">From date</label>
-          <input class="fi" type="date" id="fetch-from">
-        </div>
-        <div class="fg">
-          <label class="fl">To date</label>
-          <input class="fi" type="date" id="fetch-to">
-        </div>
+        <div class="fg"><label class="fl">From date</label><input class="fi" type="date" id="fetch-from"></div>
+        <div class="fg"><label class="fl">To date</label><input class="fi" type="date" id="fetch-to"></div>
       </div>
       <div class="fg">
         <label class="fl">CC Account to check</label>
@@ -607,8 +505,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
         <button class="btn btn-gn" onclick="startFetch()">Start Fetch</button>
       </div>
     </div>
-
-    <!-- Progress panel -->
     <div id="fetch-prog" class="hidden" style="padding:18px 20px">
       <div class="step-list" id="fetch-steps"></div>
       <div id="fetch-done-area" class="hidden">
@@ -622,15 +518,10 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
   </div>
 </div>
 
-<!-- ══ POST TO ODOO MODAL ══ -->
+<!-- POST TO ODOO MODAL -->
 <div class="mo" id="mo-post">
   <div class="md" style="max-width:500px">
-    <div class="mh">
-      <div class="mttl">🚀 Post to Odoo</div>
-      <button class="btn btn-g btn-xs" id="post-modal-close" onclick="closePostModal()" style="font-size:18px;padding:2px 8px">✕</button>
-    </div>
-
-    <!-- Config panel -->
+    <div class="mh"><div class="mttl">🚀 Post to Odoo</div><button class="btn btn-g btn-xs" id="post-modal-close" onclick="closePostModal()" style="font-size:18px;padding:2px 8px">✕</button></div>
     <div id="post-cfg" class="mb">
       <div class="finfo">ℹ Posts selected CC transactions as journal entries to Odoo (Dr Creditors / Cr CC Account).</div>
       <div style="background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:12px 14px;font-family:var(--mn);font-size:12px;line-height:2;margin-bottom:14px">
@@ -648,8 +539,6 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
         <button class="btn btn-p" onclick="startPost()">Start Posting →</button>
       </div>
     </div>
-
-    <!-- Progress panel -->
     <div id="post-prog" class="hidden" style="padding:18px 20px">
       <div class="step-list" id="post-steps"></div>
       <div id="post-done-area" class="hidden">
@@ -666,45 +555,16 @@ td input[type=text].er{background:var(--rb);border-color:var(--rbd)}
 
 <div id="toast"></div>
 
-
 <script>
 pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-/* ══ STATE ════════════════════════════════════════════════════════════ */
-const S={
-  txns:[],
-  partners:{},   // merchantKey → {name:'Odoo Partner Name', odooId:false, status:'none|ok|miss'}
-  cfg:{},
-  hist:[],
-  selFile:null,
-  rawText:'',
-  activeCc:'124101',
-  activeFy:'2024-25',
-  activeMo:'',         // '' = all months, '01'-'12'
-  activeYr:new Date().getFullYear().toString()
-};
+const S={txns:[],partners:{},cfg:{},hist:[],selFile:null,rawText:'',activeCc:'124101',activeFy:'2024-25',activeMo:'',activeYr:new Date().getFullYear().toString()};
 const K={CFG:'cco3_cfg',PARTS:'cco3_parts',HIST:'cco3_hist',TXNS:'cco3_txns',CC:'cco3_cc',FY:'cco3_fy',MO:'cco3_mo',YR:'cco3_yr'};
 
-/* ══ STORAGE ══════════════════════════════════════════════════════════ */
-// When served via Node.js: use /api/state/ (persistent JSON file on server)
-// When opened as file://: fall back to localStorage
-async function svKey(key,val){
-  if(IS_SERVED){
-    try{await fetch(`/api/state/${encodeURIComponent(key)}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({value:val})});}
-    catch(e){console.warn('state save failed',e);}
-  } else {
-    localStorage.setItem(key,JSON.stringify(val));
-  }
-}
-async function ldKey(key){
-  if(IS_SERVED){
-    try{const r=await fetch(`/api/state/${encodeURIComponent(key)}`);const j=await r.json();if(j.ok&&j.value!==undefined)return j.value;}
-    catch(e){console.warn('state load failed',e);}
-    return null;
-  } else {
-    try{return JSON.parse(localStorage.getItem(key));}catch{return null;}
-  }
-}
+const IS_SERVED = location.protocol !== 'file:';
+
+async function svKey(key,val){localStorage.setItem(key,JSON.stringify(val));}
+async function ldKey(key){try{return JSON.parse(localStorage.getItem(key));}catch{return null;}}
 function svP(){svKey(K.PARTS,S.partners);upBadges();}
 function svC(){svKey(K.CFG,S.cfg);}
 function svH(){svKey(K.HIST,S.hist);}
@@ -715,71 +575,32 @@ function svMoYr(){svKey(K.MO,S.activeMo);svKey(K.YR,S.activeYr);}
 
 async function lsLoad(){
   const load=async(k,fb)=>{const v=await ldKey(k);return v!==null?v:fb;};
-  S.cfg      = await load(K.CFG,{});
-  S.partners = await load(K.PARTS,{});
-  S.hist     = await load(K.HIST,[]);
-  S.txns     = await load(K.TXNS,[]);
-  S.activeCc = await load(K.CC,'124101');
-  S.activeFy = await load(K.FY,'2024-25');
-  S.activeMo = await load(K.MO,'');
-  S.activeYr = await load(K.YR,new Date().getFullYear().toString());
+  S.cfg=await load(K.CFG,{});S.partners=await load(K.PARTS,{});S.hist=await load(K.HIST,[]);S.txns=await load(K.TXNS,[]);
+  S.activeCc=await load(K.CC,'124101');S.activeFy=await load(K.FY,'2024-25');S.activeMo=await load(K.MO,'');S.activeYr=await load(K.YR,new Date().getFullYear().toString());
 }
 
-/* ══ HELPERS ══════════════════════════════════════════════════════════ */
 function partName(mk){return S.partners[mk]?.name||'';}
 function partStatus(mk){return S.partners[mk]?.status||'none';}
 function partId(mk){return S.partners[mk]?.odooId||false;}
+function ccLabel(code){const m={'124101':g('s-cc1l')?.value||'GGN','124102':g('s-cc2l')?.value||'KOL','124104':g('s-cc3l')?.value||'KOL (RBR)'};return`${code} · ${m[code]||code}`;}
+function fyDates(fy){const[y1,y2]=fy.split('-');return{from:`20${y1.slice(-2)}-04-01`,to:`20${y2}-03-31`};}
 
-function ccLabel(code){
-  const m={'124101':g('s-cc1l')?.value||'GGN','124102':g('s-cc2l')?.value||'KOL','124104':g('s-cc3l')?.value||'KOL (RBR)'};
-  return `${code} · ${m[code]||code}`;
-}
-
-function fyDates(fy){
-  const [y1,y2]=fy.split('-');
-  return {from:`20${y1.slice(-2)}-04-01`,to:`20${y2}-03-31`};
-}
-
-/* ══ NAVIGATION ══════════════════════════════════════════════════════ */
 const PT={dashboard:'Dashboard',import:'Import Statement',transactions:'Transactions',partners:'Partner Master',settings:'Settings'};
 function nav(el){
   const v=el.dataset.view;
-  document.querySelectorAll('.ni').forEach(n=>n.classList.remove('active'));
-  el.classList.add('active');
-  document.querySelectorAll('.view').forEach(vv=>vv.classList.remove('active'));
-  g('view-'+v).classList.add('active');
-  g('ptitle').textContent=PT[v]||v;
-  g('tba').innerHTML='';
-  if(v==='dashboard') rDash();
-  if(v==='transactions') rT();
-  if(v==='partners') rParts();
-  if(v==='settings') loadCfg();
+  document.querySelectorAll('.ni').forEach(n=>n.classList.remove('active'));el.classList.add('active');
+  document.querySelectorAll('.view').forEach(vv=>vv.classList.remove('active'));g('view-'+v).classList.add('active');
+  g('ptitle').textContent=PT[v]||v;g('tba').innerHTML='';
+  if(v==='dashboard')rDash();if(v==='transactions')rT();if(v==='partners')rParts();if(v==='settings')loadCfg();
 }
 
-/* ══ CC ACCOUNT SELECTION ═════════════════════════════════════════════ */
-function selCC(el){
-  document.querySelectorAll('.cc-pill').forEach(p=>p.classList.remove('active'));
-  el.classList.add('active');
-  S.activeCc=el.dataset.cc;
-  svCC();
-  // Also update cc-pills on import page to stay in sync
-}
+function selCC(el){document.querySelectorAll('.cc-pill').forEach(p=>p.classList.remove('active'));el.classList.add('active');S.activeCc=el.dataset.cc;svCC();}
 function saveFY(){S.activeFy=g('imp-fy').value;svFY();}
 function saveMoYr(){
-  S.activeMo=g('imp-mo').value;
-  S.activeYr=g('imp-yr').value;
-  svMoYr();
-  // Auto-derive FY from selected year+month
-  if(S.activeMo&&S.activeYr){
-    const mo=parseInt(S.activeMo,10);
-    const yr=parseInt(S.activeYr,10);
-    const fy=mo>=4?`${yr}-${String(yr+1).slice(-2)}`:`${yr-1}-${String(yr).slice(-2)}`;
-    S.activeFy=fy;svFY();
-    if(g('imp-fy'))g('imp-fy').value=fy;
-  }
+  S.activeMo=g('imp-mo').value;S.activeYr=g('imp-yr').value;svMoYr();
+  if(S.activeMo&&S.activeYr){const mo=parseInt(S.activeMo,10),yr=parseInt(S.activeYr,10);const fy=mo>=4?`${yr}-${String(yr+1).slice(-2)}`:`${yr-1}-${String(yr).slice(-2)}`;S.activeFy=fy;svFY();if(g('imp-fy'))g('imp-fy').value=fy;}
 }
 
-/* ══ DROPZONE ═════════════════════════════════════════════════════════ */
 (function(){
   const dz=g('dropzone'),fi=g('fin');
   fi.onchange=e=>{if(e.target.files[0])setFile(e.target.files[0]);};
@@ -788,48 +609,21 @@ function saveMoYr(){
   dz.ondrop=e=>{e.preventDefault();dz.classList.remove('over');const f=e.dataTransfer.files[0];if(f&&f.type==='application/pdf')setFile(f);else toast('Please drop a PDF file','er');};
 })();
 function setFile(f){S.selFile=f;const el=g('dz-file');el.style.display='block';el.textContent='✓ '+f.name;}
-function swTab(t){
-  g('ibody-pdf').classList.toggle('hidden',t!=='pdf');
-  g('ibody-txt').classList.toggle('hidden',t!=='txt');
-  g('itab-pdf').classList.toggle('active',t==='pdf');
-  g('itab-txt').classList.toggle('active',t==='txt');
-}
-function toggleDbg(){
-  const p=g('dbg-p'),b=g('dbg-btn');
-  const show=p.style.display!=='block';
-  p.style.display=show?'block':'none';
-  b.textContent=show?'▼ Hide raw text':'▶ Raw extracted text (debug)';
-  if(show&&S.rawText)p.textContent=S.rawText.slice(0,6000)+(S.rawText.length>6000?'\n[…truncated]':'');
-}
+function swTab(t){g('ibody-pdf').classList.toggle('hidden',t!=='pdf');g('ibody-txt').classList.toggle('hidden',t!=='txt');g('itab-pdf').classList.toggle('active',t==='pdf');g('itab-txt').classList.toggle('active',t==='txt');}
+function toggleDbg(){const p=g('dbg-p'),b=g('dbg-btn');const show=p.style.display!=='block';p.style.display=show?'block':'none';b.textContent=show?'▼ Hide raw text':'▶ Raw extracted text (debug)';if(show&&S.rawText)p.textContent=S.rawText.slice(0,6000)+(S.rawText.length>6000?'\n[…truncated]':'');}
 
-/* ══ PDF EXTRACTION ══════════════════════════════════════════════════ */
 async function extractPDF(file){
-  const ab=await file.arrayBuffer();
-  const pdf=await pdfjsLib.getDocument({data:ab}).promise;
-  let out='';
+  const ab=await file.arrayBuffer();const pdf=await pdfjsLib.getDocument({data:ab}).promise;let out='';
   for(let p=1;p<=pdf.numPages;p++){
-    const page=await pdf.getPage(p);
-    const ct=await page.getTextContent();
-    if(!ct.items.length)continue;
+    const page=await pdf.getPage(p);const ct=await page.getTextContent();if(!ct.items.length)continue;
     const TOLY=4;const lines=[];
-    for(const it of ct.items){
-      if(!it.str||!it.str.trim())continue;
-      const y=it.transform[5],x=it.transform[4];
-      let found=false;
-      for(const ln of lines){if(Math.abs(ln.y-y)<=TOLY){ln.items.push({x,s:it.str});found=true;break;}}
-      if(!found)lines.push({y,items:[{x,s:it.str}]});
-    }
+    for(const it of ct.items){if(!it.str||!it.str.trim())continue;const y=it.transform[5],x=it.transform[4];let found=false;for(const ln of lines){if(Math.abs(ln.y-y)<=TOLY){ln.items.push({x,s:it.str});found=true;break;}}if(!found)lines.push({y,items:[{x,s:it.str}]});}
     lines.sort((a,b)=>b.y-a.y);
-    for(const ln of lines){
-      ln.items.sort((a,b)=>a.x-b.x);
-      const row=ln.items.map(i=>i.s).join(' ').replace(/\s{2,}/g,' ').trim();
-      if(row)out+=row+'\n';
-    }
+    for(const ln of lines){ln.items.sort((a,b)=>a.x-b.x);const row=ln.items.map(i=>i.s).join(' ').replace(/\s{2,}/g,' ').trim();if(row)out+=row+'\n';}
   }
   return out;
 }
 
-/* ══ DATE PARSER ═════════════════════════════════════════════════════ */
 function pDate(s){
   const M={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};let m;
   m=s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);if(m)return`${m[3]}-${m[2].padStart(2,'0')}-${m[1].padStart(2,'0')}`;
@@ -840,7 +634,6 @@ function pDate(s){
   return s;
 }
 
-/* ══ MERCHANT KEY ════════════════════════════════════════════════════ */
 const STOP=new Set(['WWW','HTTP','HTTPS','LTD','PVT','INC','LLC','CORP','SUBSCR','PRIVA','LIMIT','INDIA','GURGAON','MUMBAI','BANGALORE','BENGALURU','KOLKATA','KOLKATTA','CHENNAI','HYDERABAD','PUNE','AHMEDABAD','DELHI','AMSTERDAM','LONDON','BERLIN','PARIS','SINGAPORE','DUBAI','STORE','DEPARTMENTAL','APPARELS','UTILITIES','COMPUTER','SERVICES','TELECOM','EDUCATION','PAYMENT','RECEIVED','TRANSFER','CHEQUE','BILL','TRANSACTION','FEES','CHARGES','BROADBAND','DOMAIN','PRIVATE','NEW','BAN','BANK','PAY','PAYMENTS','NET']);
 const CC2=new Set(['IN','CA','SE','NL','GA','WA','DE','MA','UK','US','GB','AU','SG','AE','JP','HK','FR','CH','IE','GE']);
 function mkKey(desc){
@@ -850,135 +643,73 @@ function mkKey(desc){
   return cl.length===1?cl[0]:cl.slice(0,2).join(' ');
 }
 
-/* ══ TRANSACTION PARSER ══════════════════════════════════════════════ */
 function parseTxns(text,fy){
-  const {from,to}=fyDates(fy);
+  const{from,to}=fyDates(fy);
   const lines=text.split('\n').map(l=>l.trim()).filter(l=>l.length>4);
-  const dRes=[
-    /\b(\d{2}\/\d{2}\/\d{4})\b/,/\b(\d{2}\/\d{2}\/\d{2})\b/,/\b(\d{1,2}-\d{2}-\d{4})\b/,
-    /\b(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{4})\b/i,
-    /\b(\d{1,2}-(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-\d{4})\b/i,
-    /\b(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{2})\b/i,
-  ];
+  const dRes=[/\b(\d{2}\/\d{2}\/\d{4})\b/,/\b(\d{2}\/\d{2}\/\d{2})\b/,/\b(\d{1,2}-\d{2}-\d{4})\b/,/\b(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{4})\b/i,/\b(\d{1,2}-(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-\d{4})\b/i,/\b(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{2})\b/i];
   const crRe=/PAYMENT.RECEIVED|PAYMENT.MADE|PAYMENT.TRANSFER|NEFT.RECEIVED|RTGS.RECEIVED|\bCREDIT\b|\bRefund\b|\bReversal\b|\bREVERSED\b/i;
   const skipRe=/opening balance|closing balance|credit limit|available credit|minimum due|payment due|statement date|previous balance|brought forward|carried forward|total outstanding|reward points|transaction table|retail purchase|other fees|page \d|crn \d|cash advance limit/i;
   const res=[];
   for(const line of lines){
-    if(skipRe.test(line))continue;
-    if(/^\([\d\.]+\s+[A-Z]{3}\)/i.test(line))continue;
-    let dateStr=null;
-    for(const re of dRes){const m=line.match(re);if(m){dateStr=m[1];break;}}
+    if(skipRe.test(line))continue;if(/^\([\d\.]+\s+[A-Z]{3}\)/i.test(line))continue;
+    let dateStr=null;for(const re of dRes){const m=line.match(re);if(m){dateStr=m[1];break;}}
     if(!dateStr)continue;
     const amounts=[];let m;const re2=/(\d{1,3}(?:,\d{2,3})*\.\d{2})/g;
     while((m=re2.exec(line))!==null){const v=parseFloat(m[1].replace(/,/g,''));if(v>0.5)amounts.push(v);}
     if(!amounts.length)continue;
     const amount=amounts[amounts.length-1];
-    const isCr=crRe.test(line)||/\d\.?\d*Cr\b/.test(line);
-    if(isCr)continue;  // skip payments completely
+    const isCr=crRe.test(line)||/\d\.?\d*Cr\b/.test(line);if(isCr)continue;
     let desc=line.replace(new RegExp(dRes.map(r=>r.source).join('|'),'gi'),'').replace(/\d{1,3}(?:,\d{2,3})*\.\d{2}/g,'').replace(/\b(CR|DR|Cr|Dr)\b/g,'').replace(/\s{2,}/g,' ').trim();
     if(!desc||desc.length<2)continue;
-    const dateISO=pDate(dateStr);
-    // FY filter
-    if(dateISO<from||dateISO>to)continue;
+    const dateISO=pDate(dateStr);if(dateISO<from||dateISO>to)continue;
     const mk=mkKey(desc);
-    res.push({
-      id:uid(),date:dateISO,description:desc,merchantKey:mk,amount,
-      partner:partName(mk),
-      odooId:partId(mk),
-      pStatus:partStatus(mk),
-      include:true,
-      ccAccount:S.activeCc,
-      fy:S.activeFy
-    });
+    res.push({id:uid(),date:dateISO,description:desc,merchantKey:mk,amount,partner:partName(mk),odooId:partId(mk),pStatus:partStatus(mk),include:true,ccAccount:S.activeCc,fy:S.activeFy});
   }
   return res;
 }
 
-/* ══ PARSE & LOAD ════════════════════════════════════════════════════ */
 async function parseAndLoad(){
-  const btn=g('parse-btn'),note=g('parse-note');
-  btn.disabled=true;btn.innerHTML='<span class="spin"></span> Extracting…';note.textContent='';
-  const fy=g('imp-fy').value||S.activeFy;
-  S.activeFy=fy;svFY();
+  const btn=g('parse-btn'),note=g('parse-note');btn.disabled=true;btn.innerHTML='<span class="spin"></span> Extracting…';note.textContent='';
+  const fy=g('imp-fy').value||S.activeFy;S.activeFy=fy;svFY();
   try{
-    const isPdf=g('itab-pdf').classList.contains('active');
-    let text='';
-    if(isPdf){
-      if(!S.selFile){toast('Select a PDF first','er');return;}
-      text=await extractPDF(S.selFile);
-    } else {
-      text=g('paste-txt').value;
-      if(!text.trim()){toast('Paste statement text first','er');return;}
-    }
-    S.rawText=text;
-    if(g('dbg-p').style.display==='block')g('dbg-p').textContent=text.slice(0,6000);
+    const isPdf=g('itab-pdf').classList.contains('active');let text='';
+    if(isPdf){if(!S.selFile){toast('Select a PDF first','er');return;}text=await extractPDF(S.selFile);}
+    else{text=g('paste-txt').value;if(!text.trim()){toast('Paste statement text first','er');return;}}
+    S.rawText=text;if(g('dbg-p').style.display==='block')g('dbg-p').textContent=text.slice(0,6000);
     const all=parseTxns(text,fy);
-    if(!all.length){
-      g('dbg-p').style.display='block';g('dbg-btn').textContent='▼ Hide raw text';
-      g('dbg-p').textContent=text?text.slice(0,4000):'[No text extracted — PDF may be image-based. Use Paste text tab.]';
-      toast('No expense transactions found in the selected FY. Check raw text below or use Paste text tab.','er');
-      return;
-    }
-    // Tag each transaction with selected month/year
-    const selMo=g('imp-mo').value||'';
-    const selYr=g('imp-yr').value||new Date().getFullYear().toString();
+    if(!all.length){g('dbg-p').style.display='block';g('dbg-btn').textContent='▼ Hide raw text';g('dbg-p').textContent=text?text.slice(0,4000):'[No text extracted]';toast('No expense transactions found.','er');return;}
+    const selMo=g('imp-mo').value||'';const selYr=g('imp-yr').value||new Date().getFullYear().toString();
     all.forEach(t=>{t.stmtMonth=selMo;t.stmtYear=selYr;});
-    // Merge with existing txns (append, don't replace)
     const existingIds=new Set(S.txns.map(t=>t.date+t.description+t.amount));
     const newTxns=all.filter(t=>!existingIds.has(t.date+t.description+t.amount));
-    S.txns=[...S.txns,...newTxns];
-    svT();
-    // Add any new merchants to partner master (status none if not mapped)
-    let newMerchants=0;
-    for(const tx of newTxns){
-      if(!S.partners[tx.merchantKey]){
-        S.partners[tx.merchantKey]={name:'',odooId:false,status:'none'};
-        newMerchants++;
-      }
-    }
+    S.txns=[...S.txns,...newTxns];svT();
+    let newMerchants=0;for(const tx of newTxns){if(!S.partners[tx.merchantKey]){S.partners[tx.merchantKey]={name:'',odooId:false,status:'none'};newMerchants++;}}
     svP();
-    const {from,to}=fyDates(fy);
     const moLabel=selMo?new Date(2000,parseInt(selMo,10)-1,1).toLocaleString('en-IN',{month:'short'})+' '+selYr:'';
     S.hist.unshift({date:new Date().toLocaleDateString('en-IN'),file:S.selFile?S.selFile.name:'Pasted text',count:newTxns.length,fy,cc:S.activeCc,total:all.reduce((s,t)=>s+t.amount,0),month:moLabel});
-    if(S.hist.length>20)S.hist=S.hist.slice(0,20);
-    svH();upBadges();
+    if(S.hist.length>20)S.hist=S.hist.slice(0,20);svH();upBadges();
     const nopart=newTxns.filter(t=>!t.partner).length;
     note.textContent=`${newTxns.length} transactions added · FY ${fy}${newTxns.length<all.length?' (duplicates skipped)':''}`;
-    toast(`✓ ${newTxns.length} transactions loaded${newMerchants?' · '+newMerchants+' new merchants in Partner Master':''} ${nopart?' · ⚠ '+nopart+' without partner':''}`,nopart?'aw':'ok');
+    toast(`✓ ${newTxns.length} transactions loaded${newMerchants?' · '+newMerchants+' new merchants':''} ${nopart?' · ⚠ '+nopart+' without partner':''}`,nopart?'aw':'ok');
     nav(document.querySelector('[data-view=transactions]'));
   }catch(e){toast('Error: '+e.message,'er');console.error(e);}
   finally{btn.disabled=false;btn.innerHTML='Extract transactions →';}
 }
 
-/* ══ TRANSACTION TABLE ═══════════════════════════════════════════════ */
 function rT(){
-  // Update session info bar
   g('tx-cc-lbl').textContent=S.txns.length?S.txns[0]?.ccAccount?ccLabel(S.txns[0].ccAccount):'—':'—';
   g('tx-fy-lbl').textContent=S.txns.length?S.txns[0]?.fy||'—':'—';
-
-  const q=(g('tx-s').value||'').toLowerCase();
-  const sf=g('tx-st').value;
-  const moF=g('tx-mo')?.value||'';
-  const yrF=g('tx-yr')?.value||'';
+  const q=(g('tx-s').value||'').toLowerCase();const sf=g('tx-st').value;const moF=g('tx-mo')?.value||'';const yrF=g('tx-yr')?.value||'';
   let filtered=S.txns.filter(t=>{
     if(q&&!t.description.toLowerCase().includes(q)&&!t.merchantKey.toLowerCase().includes(q))return false;
-    if(sf==='ok'&&t.pStatus!=='ok')return false;
-    if(sf==='miss'&&t.pStatus!=='miss')return false;
-    if(sf==='none'&&t.pStatus!=='none')return false;
-    if(moF&&t.date&&t.date.slice(5,7)!==moF)return false;
-    if(yrF&&t.date&&t.date.slice(0,4)!==yrF)return false;
+    if(sf==='ok'&&t.pStatus!=='ok')return false;if(sf==='miss'&&t.pStatus!=='miss')return false;if(sf==='none'&&t.pStatus!=='none')return false;
+    if(moF&&t.date&&t.date.slice(5,7)!==moF)return false;if(yrF&&t.date&&t.date.slice(0,4)!==yrF)return false;
     return true;
   });
-
-  const incl=S.txns.filter(t=>t.include);
-  const dr=incl.reduce((s,t)=>s+t.amount,0);
-  const nopart=S.txns.filter(t=>!t.partner).length;
-  g('ts-c').textContent=filtered.length;
-  g('ts-d').textContent=inr(dr);
-  g('ts-um').textContent=nopart;g('ts-uw').style.display=nopart?'inline':'none';
+  const incl=S.txns.filter(t=>t.include);const dr=incl.reduce((s,t)=>s+t.amount,0);const nopart=S.txns.filter(t=>!t.partner).length;
+  g('ts-c').textContent=filtered.length;g('ts-d').textContent=inr(dr);g('ts-um').textContent=nopart;g('ts-uw').style.display=nopart?'inline':'none';
   g('post-btn').disabled=!S.txns.some(t=>t.include);
-  if(!filtered.length){g('tx-body').innerHTML='<tr><td colspan="8" class="tbl-empty">No rows match</td></tr>';
-    g('bbar').classList.add('hidden');return;}
+  if(!filtered.length){g('tx-body').innerHTML='<tr><td colspan="8" class="tbl-empty">No rows match</td></tr>';g('bbar').classList.add('hidden');return;}
   g('tx-body').innerHTML=filtered.map(tx=>`
     <tr id="row-${tx.id}" class="${tx.alreadyInOdoo?'dup-row':!tx.partner?'unmp':''}">
       <td><input type="checkbox" ${tx.include?'checked':''} onchange="setTx('${tx.id}','include',this.checked)"></td>
@@ -986,164 +717,58 @@ function rT(){
       <td><div class="tdm" style="max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(tx.merchantKey)}">${esc(tx.merchantKey)}</div></td>
       <td><div class="tdesc" title="${esc(tx.description)}">${esc(tx.description)}</div></td>
       <td class="tdr tdm">₹${tx.amount.toLocaleString('en-IN',{minimumFractionDigits:2})}</td>
-      <td style="min-width:150px">
-        <input type="text" class="${tx.pStatus==='ok'?'ok':tx.pStatus==='miss'?'er':''}" id="pi-${tx.id}"
-          value="${esc(tx.partner)}" placeholder="Partner name"
-          oninput="onPI('${tx.id}',this.value)" style="width:142px">
-      </td>
-      <td>
-        ${tx.postedToOdoo?`<span class="already-badge">✓ Posted</span>`:
-          tx.alreadyInOdoo?`<span class="dup-badge">⚠ In Odoo</span>`:
-          tx.pStatus==='ok'?`<span class="p-ok">✓ found</span>`:
-          tx.pStatus==='miss'?`<span class="p-miss">✗ not found</span>`:
-          tx.partner?`<span class="p-none">not synced</span>`:`<span class="p-none">—</span>`}
-      </td>
+      <td style="min-width:150px"><input type="text" class="${tx.pStatus==='ok'?'ok':tx.pStatus==='miss'?'er':''}" id="pi-${tx.id}" value="${esc(tx.partner)}" placeholder="Partner name" oninput="onPI('${tx.id}',this.value)" style="width:142px"></td>
+      <td>${tx.postedToOdoo?`<span class="already-badge">✓ Posted</span>`:tx.alreadyInOdoo?`<span class="dup-badge">⚠ In Odoo</span>`:tx.pStatus==='ok'?`<span class="p-ok">✓ found</span>`:tx.pStatus==='miss'?`<span class="p-miss">✗ not found</span>`:tx.partner?`<span class="p-none">not synced</span>`:`<span class="p-none">—</span>`}</td>
       <td style="white-space:nowrap">
-        <button class="btn btn-xs" id="smb-${tx.id}" title="Save to Partner Master"
-          style="background:var(--pub);color:var(--pu);border:1px solid var(--pud);display:${tx.partner&&tx.pStatus==='none'?'inline-flex':'none'}"
-          onclick="savePartMap('${tx.id}')">💾</button>
+        <button class="btn btn-xs" id="smb-${tx.id}" title="Save to Partner Master" style="background:var(--pub);color:var(--pu);border:1px solid var(--pud);display:${tx.partner&&tx.pStatus==='none'?'inline-flex':'none'}" onclick="savePartMap('${tx.id}')">💾</button>
         <button class="btn btn-xs btn-d" style="margin-left:3px" onclick="delTx('${tx.id}')" title="Delete row">×</button>
       </td>
     </tr>`).join('');
-
-  const nSel=S.txns.filter(t=>t.include).length;
-  g('bbar').classList.toggle('hidden',nSel===0);
-  g('bbar-cnt').textContent=`${nSel} selected`;
-  g('sel-all').checked=S.txns.length>0&&S.txns.every(t=>t.include);
+  const nSel=S.txns.filter(t=>t.include).length;g('bbar').classList.toggle('hidden',nSel===0);g('bbar-cnt').textContent=`${nSel} selected`;g('sel-all').checked=S.txns.length>0&&S.txns.every(t=>t.include);
 }
 
-function onPI(id,val){
-  const t=S.txns.find(x=>x.id===id);if(!t)return;
-  t.partner=val;t.pStatus='none';t.odooId=false;
-  const smb=g('smb-'+id);if(smb)smb.style.display=val.trim()?'inline-flex':'none';
-  const ai=g('pi-'+id);if(ai){ai.className='';}
-  const row=g('row-'+id);if(row)row.className=val.trim()?'':'unmp';
-  // Update partner master pStatus to none since name changed
-  if(S.partners[t.merchantKey]) S.partners[t.merchantKey].status='none';
-}
-
-function savePartMap(id){
-  const t=S.txns.find(x=>x.id===id);if(!t||!t.partner.trim())return;
-  S.partners[t.merchantKey]={name:t.partner.trim(),odooId:false,status:'none'};
-  svP();
-  // Apply to all rows with same merchant
-  S.txns.filter(x=>x.merchantKey===t.merchantKey).forEach(x=>{x.partner=t.partner.trim();x.pStatus='none';x.odooId=false;});
-  svT();rT();rParts();
-  toast(`Saved partner: ${t.merchantKey} → ${t.partner}`,'ok');
-}
-
-function setTx(id,f,v){const t=S.txns.find(x=>x.id===id);if(t){t[f]=v;}rT();}
+function onPI(id,val){const t=S.txns.find(x=>x.id===id);if(!t)return;t.partner=val;t.pStatus='none';t.odooId=false;const smb=g('smb-'+id);if(smb)smb.style.display=val.trim()?'inline-flex':'none';const ai=g('pi-'+id);if(ai)ai.className='';const row=g('row-'+id);if(row)row.className=val.trim()?'':'unmp';if(S.partners[t.merchantKey])S.partners[t.merchantKey].status='none';}
+function savePartMap(id){const t=S.txns.find(x=>x.id===id);if(!t||!t.partner.trim())return;S.partners[t.merchantKey]={name:t.partner.trim(),odooId:false,status:'none'};svP();S.txns.filter(x=>x.merchantKey===t.merchantKey).forEach(x=>{x.partner=t.partner.trim();x.pStatus='none';x.odooId=false;});svT();rT();rParts();toast(`Saved partner: ${t.merchantKey} → ${t.partner}`,'ok');}
+function setTx(id,f,v){const t=S.txns.find(x=>x.id===id);if(t)t[f]=v;rT();}
 function toggleAll(c){S.txns.forEach(t=>t.include=c);rT();}
 function delTx(id){S.txns=S.txns.filter(x=>x.id!==id);svT();upBadges();rT();}
-function bulkApply(){
-  const p=g('bulk-part').value.trim();if(!p){toast('Enter partner name','er');return;}
-  const sel=S.txns.filter(t=>t.include);
-  sel.forEach(t=>{t.partner=p;t.pStatus='none';t.odooId=false;});
-  svT();rT();toast(`Set partner for ${sel.length} transactions`,'ok');
-}
-function delSelected(){
-  const sel=S.txns.filter(t=>t.include);
-  if(!sel.length){toast('No rows selected','er');return;}
-  if(!confirm(`Delete ${sel.length} selected transaction(s)? This cannot be undone.`))return;
-  S.txns=S.txns.filter(t=>!t.include);
-  svT();upBadges();rT();
-  toast(`Deleted ${sel.length} transaction${sel.length!==1?'s':''}`, 'ok');
-}
+function bulkApply(){const p=g('bulk-part').value.trim();if(!p){toast('Enter partner name','er');return;}const sel=S.txns.filter(t=>t.include);sel.forEach(t=>{t.partner=p;t.pStatus='none';t.odooId=false;});svT();rT();toast(`Set partner for ${sel.length} transactions`,'ok');}
+function delSelected(){const sel=S.txns.filter(t=>t.include);if(!sel.length){toast('No rows selected','er');return;}if(!confirm(`Delete ${sel.length} selected transaction(s)?`))return;S.txns=S.txns.filter(t=>!t.include);svT();upBadges();rT();toast(`Deleted ${sel.length} transaction${sel.length!==1?'s':''}`, 'ok');}
 
-/* ══ PARTNER MASTER ══════════════════════════════════════════════════ */
 function rParts(){
   const q=(g('part-s').value||'').toUpperCase();
   const keys=Object.keys(S.partners).filter(k=>!q||k.includes(q)||S.partners[k].name.toUpperCase().includes(q)).sort();
   g('part-cnt').textContent=`${keys.length} of ${Object.keys(S.partners).length} partner${Object.keys(S.partners).length!==1?'s':''}`;
-  if(!keys.length){
-    g('part-list').innerHTML='<div class="tbl-empty" style="padding:32px">No partners yet<br><span class="txs t2">Import a statement — all merchants appear here automatically</span></div>';
-    return;
-  }
+  if(!keys.length){g('part-list').innerHTML='<div class="tbl-empty" style="padding:32px">No partners yet</div>';return;}
   g('part-list').innerHTML=keys.map(k=>{
-    const p=S.partners[k];
-    const stEl=p.status==='ok'?`<span class="p-ok">✓ ID ${p.odooId}</span>`:p.status==='miss'?`<span class="p-miss">✗ not found</span>`:p.name?`<span class="p-none">not synced</span>`:`<span class="p-none">—</span>`;
-    return`<div class="prow">
-      <div class="pmrch" title="${esc(k)}">${esc(k)}</div>
-      <input type="text" class="pinput" value="${esc(p.name)}" placeholder="Odoo partner name (e.g. Atlassian Pty Ltd)"
-        onchange="updPart('${esc(k)}',this.value)">
-      <div>${stEl}</div>
-      <button class="btn btn-xs btn-d" onclick="delPart('${esc(k)}')">Delete</button>
-    </div>`;
+    const p=S.partners[k];const stEl=p.status==='ok'?`<span class="p-ok">✓ ID ${p.odooId}</span>`:p.status==='miss'?`<span class="p-miss">✗ not found</span>`:p.name?`<span class="p-none">not synced</span>`:`<span class="p-none">—</span>`;
+    return`<div class="prow"><div class="pmrch" title="${esc(k)}">${esc(k)}</div><input type="text" class="pinput" value="${esc(p.name)}" placeholder="Odoo partner name" onchange="updPart('${esc(k)}',this.value)"><div>${stEl}</div><button class="btn btn-xs btn-d" onclick="delPart('${esc(k)}')">Delete</button></div>`;
   }).join('');
 }
-
-function updPart(key,val){
-  if(!S.partners[key])S.partners[key]={name:'',odooId:false,status:'none'};
-  S.partners[key].name=val.trim();
-  S.partners[key].status='none';S.partners[key].odooId=false;
-  svP();
-  // Sync to any loaded transactions
-  S.txns.filter(t=>t.merchantKey===key).forEach(t=>{t.partner=val.trim();t.pStatus='none';t.odooId=false;});
-  svT();
-}
-
-function delPart(key){
-  if(!confirm(`Delete partner mapping for "${key}"?`))return;
-  delete S.partners[key];svP();rParts();toast('Deleted: '+key);
-}
-
+function updPart(key,val){if(!S.partners[key])S.partners[key]={name:'',odooId:false,status:'none'};S.partners[key].name=val.trim();S.partners[key].status='none';S.partners[key].odooId=false;svP();S.txns.filter(t=>t.merchantKey===key).forEach(t=>{t.partner=val.trim();t.pStatus='none';t.odooId=false;});svT();}
+function delPart(key){if(!confirm(`Delete partner mapping for "${key}"?`))return;delete S.partners[key];svP();rParts();toast('Deleted: '+key);}
 function showAddPart(){g('nm-m').value='';g('nm-p').value='';showMo('mo-add');}
-function addPartModal(){
-  const k=g('nm-m').value.toUpperCase().trim(),p=g('nm-p').value.trim();
-  if(!k||!p){toast('Enter both merchant key and partner name','er');return;}
-  S.partners[k]={name:p,odooId:false,status:'none'};
-  svP();rParts();closeMo('mo-add');toast(`Added: ${k} → ${p}`,'ok');
-}
+function addPartModal(){const k=g('nm-m').value.toUpperCase().trim(),p=g('nm-p').value.trim();if(!k||!p){toast('Enter both merchant key and partner name','er');return;}S.partners[k]={name:p,odooId:false,status:'none'};svP();rParts();closeMo('mo-add');toast(`Added: ${k} → ${p}`,'ok');}
+function expPartners(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S.partners,null,2)],{type:'application/json'}));a.download='cc-partner-master.json';a.click();toast('Partner master exported');}
+function impPartners(input){const f=input.files[0];if(!f)return;const r=new FileReader();r.onload=e=>{try{const m=JSON.parse(e.target.result);Object.assign(S.partners,m);svP();rParts();toast(`Imported ${Object.keys(m).length} partners`,'ok');}catch{toast('Invalid JSON','er');}};r.readAsText(f);input.value='';}
 
-function expPartners(){
-  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S.partners,null,2)],{type:'application/json'}));a.download='cc-partner-master.json';a.click();toast('Partner master exported');
-}
-function impPartners(input){
-  const f=input.files[0];if(!f)return;
-  const r=new FileReader();r.onload=e=>{try{const m=JSON.parse(e.target.result);Object.assign(S.partners,m);svP();rParts();toast(`Imported ${Object.keys(m).length} partners`,'ok');}catch{toast('Invalid JSON','er');}};
-  r.readAsText(f);input.value='';
-}
-
-/* ══ SYNC WITH ODOO ══════════════════════════════════════════════════ */
 async function syncOdoo(){
   if(!S.cfg.url){toast('Configure Odoo settings first','er');nav(document.querySelector('[data-view=settings]'));return;}
-  const btn=g('sync-btn'),note=g('sync-note');
-  btn.disabled=true;btn.innerHTML='<span class="spin" style="border-top-color:var(--gn)"></span> Syncing…';
-  note.style.display='none';
+  const btn=g('sync-btn'),note=g('sync-note');btn.disabled=true;btn.innerHTML='<span class="spin" style="border-top-color:var(--gn)"></span> Syncing…';note.style.display='none';
   try{
-    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});
-    if(!auth?.uid)throw new Error('Auth failed');
-    setConn(true);
+    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});if(!auth?.uid)throw new Error('Auth failed');setConn(true);
     let found=0,miss=0;
-    for(const mk of Object.keys(S.partners)){
-      const pname=S.partners[mk].name;
-      if(!pname){S.partners[mk].status='none';continue;}
-      try{
-        const r=await kw('res.partner','search_read',[[['name','ilike',pname.trim()]]],{fields:['id','name'],limit:10});
-        const exact=r.find(p=>p.name.toLowerCase()===pname.toLowerCase().trim());
-        const match=exact||r[0];
-        if(match){S.partners[mk].odooId=match.id;S.partners[mk].status='ok';found++;}
-        else{S.partners[mk].odooId=false;S.partners[mk].status='miss';miss++;}
-      }catch(e){S.partners[mk].status='miss';}
+    for(const mk of Object.keys(S.partners)){const pname=S.partners[mk].name;if(!pname){S.partners[mk].status='none';continue;}
+      try{const r=await kw('res.partner','search_read',[[['name','ilike',pname.trim()]]],{fields:['id','name'],limit:10});const exact=r.find(p=>p.name.toLowerCase()===pname.toLowerCase().trim());const match=exact||r[0];if(match){S.partners[mk].odooId=match.id;S.partners[mk].status='ok';found++;}else{S.partners[mk].odooId=false;S.partners[mk].status='miss';miss++;}}catch(e){S.partners[mk].status='miss';}
     }
-    // Refresh txns statuses
-    for(const tx of S.txns){
-      if(S.partners[tx.merchantKey]){
-        tx.pStatus=S.partners[tx.merchantKey].status;
-        tx.odooId=S.partners[tx.merchantKey].odooId||false;
-        if(tx.partner!==S.partners[tx.merchantKey].name)tx.partner=S.partners[tx.merchantKey].name;
-      }
-    }
-    svP();svT();
-    rParts();
-    note.style.display='inline';note.style.color=miss?'var(--aw)':'var(--gn)';
-    note.textContent=`✓ ${found} found · ${miss} not found in Odoo`;
-    toast(`Sync complete: ${found} matched, ${miss} not found in Odoo`,miss?'aw':'ok');
+    for(const tx of S.txns){if(S.partners[tx.merchantKey]){tx.pStatus=S.partners[tx.merchantKey].status;tx.odooId=S.partners[tx.merchantKey].odooId||false;if(tx.partner!==S.partners[tx.merchantKey].name)tx.partner=S.partners[tx.merchantKey].name;}}
+    svP();svT();rParts();
+    note.style.display='inline';note.style.color=miss?'var(--aw)':'var(--gn)';note.textContent=`✓ ${found} found · ${miss} not found in Odoo`;
+    toast(`Sync complete: ${found} matched, ${miss} not found`,miss?'aw':'ok');
   }catch(e){toast('Sync failed: '+e.message,'er');setConn(false);}
   finally{btn.disabled=false;btn.innerHTML='⟳ Sync with Odoo';}
 }
 
-/* ══ SETTINGS ════════════════════════════════════════════════════════ */
 function loadCfg(){
   const c=S.cfg;
   g('s-url').value=c.url||'';g('s-db').value=c.db||'';g('s-user').value=c.user||'';g('s-pass').value=c.pass||'';
@@ -1151,7 +776,7 @@ function loadCfg(){
   g('s-cc1').value=c.cc1||'124101';g('s-cc2').value=c.cc2||'124102';g('s-cc3').value=c.cc3||'124104';
   g('s-cc1l').value=c.cc1l||'GGN';g('s-cc2l').value=c.cc2l||'KOL';g('s-cc3l').value=c.cc3l||'KOL (RBR)';
   g('s-proxy').value=c.proxy||'';
-  // Only show CORS warning when opened directly as a file
+  g('s-company').value=c.company||'';
   const cw=g('cors-warn');if(cw)cw.style.display=IS_SERVED?'none':'flex';
 }
 function saveCfg(){
@@ -1160,11 +785,10 @@ function saveCfg(){
     jnl:g('s-jnl').value,
     cc1:g('s-cc1').value,cc2:g('s-cc2').value,cc3:g('s-cc3').value,
     cc1l:g('s-cc1l').value,cc2l:g('s-cc2l').value,cc3l:g('s-cc3l').value,
-    proxy:g('s-proxy').value.trim()
+    proxy:g('s-proxy').value.trim(),
+    company:g('s-company').value.trim()
   };
-  svC();
-  // Refresh CC pills on import page
-  refreshCCPills();
+  svC();refreshCCPills();
   const n=g('s-note');n.style.display='inline';n.style.color='var(--gn)';n.textContent='✓ Saved';setTimeout(()=>n.style.display='none',2500);
   toast('Settings saved','ok');
 }
@@ -1178,153 +802,97 @@ function refreshCCPills(){
 async function testConn(){
   if(!S.cfg.url){toast('Enter Odoo URL first','er');return;}
   const n=g('s-note');n.style.display='inline';n.style.color='var(--t2)';n.textContent='Testing…';
-  try{
-    const r=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});
-    if(r?.uid){n.style.color='var(--gn)';n.textContent=`✓ Connected UID ${r.uid}`;setConn(true);toast('Connected!','ok');}
-    else{n.style.color='var(--rd)';n.textContent='✗ Auth failed';setConn(false);}
-  }catch(e){n.style.color='var(--rd)';n.textContent='✗ '+e.message;setConn(false);}
+  try{const r=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});if(r?.uid){n.style.color='var(--gn)';n.textContent=`✓ Connected UID ${r.uid}`;setConn(true);toast('Connected!','ok');}else{n.style.color='var(--rd)';n.textContent='✗ Auth failed';setConn(false);}}
+  catch(e){n.style.color='var(--rd)';n.textContent='✗ '+e.message;setConn(false);}
 }
 function clrTx(){if(!confirm('Clear all transactions?'))return;S.txns=[];svT();upBadges();toast('Cleared');}
 function clrHist(){if(!confirm('Clear history?'))return;S.hist=[];svH();rDash();toast('Cleared');}
 function clrParts(){if(!confirm('Clear ALL partner mappings?'))return;S.partners={};svP();rParts();toast('All partners cleared');}
 
-/* ══ DASHBOARD ═══════════════════════════════════════════════════════ */
 function rDash(){
   const pCount=Object.values(S.partners).filter(p=>p.name).length;
-  g('ds-p').textContent=pCount;
-  g('ds-i').textContent=S.hist.length;
-  g('ds-t').textContent=S.txns.length;
-  g('ds-u').textContent=S.txns.filter(t=>!t.partner).length;
-  g('ds-cc').textContent=ccLabel(S.activeCc);
+  g('ds-p').textContent=pCount;g('ds-i').textContent=S.hist.length;g('ds-t').textContent=S.txns.length;g('ds-u').textContent=S.txns.filter(t=>!t.partner).length;g('ds-cc').textContent=ccLabel(S.activeCc);
   const hist=g('dash-hist');
   if(!S.hist.length){hist.innerHTML='<div class="tbl-empty" style="padding:18px">No imports yet</div>';return;}
-  hist.innerHTML=`<table style="width:100%;border-collapse:collapse;font-size:12px">
-    <thead><tr>
-      <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">Date</th>
-      <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">File</th>
-      <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">Stmt Month</th>
-      <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">FY</th>
-      <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">CC Acct</th>
-      <th style="background:var(--bg);padding:6px 10px;text-align:right;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.05em">Total</th>
-    </tr></thead>
-    <tbody>${S.hist.map(h=>`<tr>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-size:11px">${h.date}</td>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-size:10px;color:var(--t2);max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(h.file)}</td>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;color:var(--pu)">${esc(h.month||'—')}</td>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px">${h.fy||'—'}</td>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;color:var(--ac)">${h.cc||'—'}</td>
-      <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;text-align:right;color:var(--rd)">${inr(h.total||0)}</td>
-    </tr>`).join('')}</tbody></table>`;
+  hist.innerHTML=`<table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr>
+    <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">Date</th>
+    <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">File</th>
+    <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">Month</th>
+    <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">FY</th>
+    <th style="background:var(--bg);padding:6px 10px;text-align:left;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">CC Acct</th>
+    <th style="background:var(--bg);padding:6px 10px;text-align:right;font-size:9px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);text-transform:uppercase">Total</th>
+  </tr></thead><tbody>${S.hist.map(h=>`<tr>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-size:11px">${h.date}</td>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-size:10px;color:var(--t2);max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(h.file)}</td>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;color:var(--pu)">${esc(h.month||'—')}</td>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px">${h.fy||'—'}</td>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;color:var(--ac)">${h.cc||'—'}</td>
+    <td style="padding:7px 10px;border-bottom:1px solid var(--bd);font-family:var(--mn);font-size:11px;text-align:right;color:var(--rd)">${inr(h.total||0)}</td>
+  </tr>`).join('')}</tbody></table>`;
 }
-
-/* ══ ODOO RPC ════════════════════════════════════════════════════════ */
-// Detect whether we are running on the Node.js server or opened as file://
-const IS_SERVED = location.protocol !== 'file:';
 
 function setConn(ok){g('cdot').className='cdot'+(ok?' ok':' er');g('ctxt').textContent=ok?(S.cfg.url||'').replace('https://',''):'Not connected';}
 
 async function rpc(ep,params){
   if(IS_SERVED){
-    // ── Server-side proxy — no CORS, session cookies handled transparently ──
-    const res=await fetch('/api/odoo/rpc',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      credentials:'include',
-      body:JSON.stringify({url:S.cfg.url,endpoint:ep,params})
-    });
-    if(!res.ok)throw new Error(`Proxy HTTP ${res.status}`);
-    const data=await res.json();
-    if(data.error)throw new Error(data.error.data?.message||data.error.message||'Odoo error');
-    return data.result;
+    const res=await fetch('/api/odoo/rpc',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'include',body:JSON.stringify({url:S.cfg.url,endpoint:ep,params})});
+    if(!res.ok)throw new Error(`Proxy HTTP ${res.status}`);const data=await res.json();if(data.error)throw new Error(data.error.data?.message||data.error.message||'Odoo error');return data.result;
   } else {
-    // ── file:// fallback — direct call (CORS will block, shown in Settings) ──
     const base=S.cfg.proxy?S.cfg.proxy.replace(/\/$/,''):S.cfg.url||'';
     const url=S.cfg.proxy?`${base}?target=${encodeURIComponent((S.cfg.url||'')+ep)}`:base+ep;
-    try{
-      const res=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'include',body:JSON.stringify({jsonrpc:'2.0',method:'call',id:1,params})});
-      if(!res.ok)throw new Error(`HTTP ${res.status} — check Odoo URL and credentials`);
-      const data=await res.json();
-      if(data.error)throw new Error(data.error.data?.message||data.error.message||'Odoo RPC error');
-      return data.result;
-    }catch(e){
-      if(e instanceof TypeError||(e.message&&(e.message.includes('Failed to fetch')||e.message.includes('NetworkError')))){
-        throw new Error('CORS blocked: open this file via the Node.js server instead of double-clicking it.\n\nRun: node server.js\nThen open: http://localhost:3004');
-      }
-      throw e;
-    }
+    try{const res=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'include',body:JSON.stringify({jsonrpc:'2.0',method:'call',id:1,params})});if(!res.ok)throw new Error(`HTTP ${res.status}`);const data=await res.json();if(data.error)throw new Error(data.error.data?.message||data.error.message||'Odoo RPC error');return data.result;}
+    catch(e){if(e instanceof TypeError||(e.message&&(e.message.includes('Failed to fetch')||e.message.includes('NetworkError'))))throw new Error('CORS blocked: open via the Node.js server instead of double-clicking.\n\nRun: node server.js\nThen open: http://localhost:3004');throw e;}
   }
 }
 async function kw(model,method,args,kwargs={}){return rpc('/web/dataset/call_kw',{model,method,args,kwargs});}
 
-/* ══ POST TO ODOO ════════════════════════════════════════════════════ */
+/* ── postOdoo (legacy log flow) ─────────────────────────────────────── */
 async function postOdoo(){
-  const sel=S.txns.filter(t=>t.include);
-  if(!sel.length){toast('No transactions selected','er');return;}
+  const sel=S.txns.filter(t=>t.include);if(!sel.length){toast('No transactions selected','er');return;}
   if(!S.cfg.url||!S.cfg.db){toast('Configure Odoo settings first','er');nav(document.querySelector('[data-view=settings]'));return;}
-
-  // Get CC account code for this batch
-  const ccCode=S.activeCc;
-  const credCode='130001';
-
+  const ccCode=S.activeCc,credCode='130001';
   const btn=g('post-btn');btn.disabled=true;btn.innerHTML='<span class="spin"></span> Posting…';
   const logp=g('logp');logp.style.display='block';
-
   try{
     addLog('in','Authenticating…');
-    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});
-    if(!auth?.uid)throw new Error('Authentication failed');
-    addLog('ok',`UID ${auth.uid}`);setConn(true);
-
+    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});if(!auth?.uid)throw new Error('Authentication failed');addLog('ok',`UID ${auth.uid}`);setConn(true);
     const jnl=S.cfg.jnl||'Miscellaneous Operations';
-    const journals=await kw('account.journal','search_read',[[['name','=',jnl]]],{fields:['id','name'],limit:1});
+    const journals=await kw('account.journal','search_read',[[['name','=',jnl]]],{fields:['id','name','company_id'],limit:1});
     if(!journals.length)throw new Error(`Journal "${jnl}" not found`);
     const jid=journals[0].id;addLog('ok',`Journal: ${journals[0].name}`);
-
-    // Fetch CC account
-    const ccAccs=await kw('account.account','search_read',[[['code','=',ccCode]]],{fields:['id','name'],limit:1});
-    if(!ccAccs.length)throw new Error(`CC account ${ccCode} not found in Odoo`);
-    const ccId=ccAccs[0].id;addLog('ok',`CC account: ${ccCode} ${ccAccs[0].name}`);
-
-    // Fetch Creditors account
-    const credAccs=await kw('account.account','search_read',[[['code','=',credCode]]],{fields:['id','name'],limit:1});
-    if(!credAccs.length)throw new Error(`Creditor account ${credCode} not found in Odoo`);
-    const credId=credAccs[0].id;addLog('ok',`Creditor account: ${credCode} ${credAccs[0].name}`);
-
+    // Resolve company
+    let companyId2=journals[0].company_id?.[0]||false;
+    if(S.cfg.company){
+      const cos2=await kw('res.company','search_read',[[['name','ilike',S.cfg.company.trim()]]],{fields:['id','name'],limit:5});
+      const exact2=cos2.find(c=>c.name.toLowerCase()===S.cfg.company.toLowerCase().trim());
+      const match2=exact2||cos2[0];
+      if(match2){companyId2=match2.id;addLog('ok',`Company: ${match2.name} (ID ${match2.id})`);}
+    }
+    const ccAccs=await kw('account.account','search_read',[[['code','=',ccCode]]],{fields:['id','name'],limit:1});if(!ccAccs.length)throw new Error(`CC account ${ccCode} not found`);const ccId=ccAccs[0].id;addLog('ok',`CC: ${ccCode} ${ccAccs[0].name}`);
+    const credAccs=await kw('account.account','search_read',[[['code','=',credCode]]],{fields:['id','name'],limit:1});if(!credAccs.length)throw new Error(`Creditor account ${credCode} not found`);const credId=credAccs[0].id;addLog('ok',`Creditor: ${credCode} ${credAccs[0].name}`);
     let ok=0,err=0;
     for(const tx of sel){
       try{
-        // Partner ID — use cached or fetch fresh
         let pid=tx.odooId||false;
-        if(!pid&&tx.partner&&tx.partner.trim()){
-          const r=await kw('res.partner','search_read',[[['name','ilike',tx.partner.trim()]]],{fields:['id','name'],limit:5});
-          const exact=r.find(p=>p.name.toLowerCase()===tx.partner.toLowerCase().trim());
-          pid=(exact||r[0])?.id||false;
-          if(pid&&S.partners[tx.merchantKey]){S.partners[tx.merchantKey].odooId=pid;S.partners[tx.merchantKey].status='ok';}
-          if(!pid)addLog('in',`Partner "${tx.partner}" not in Odoo — posting without partner tag`);
-        }
-        const ref=`${tx.date} ${tx.description}`.slice(0,256);
-        const lkw=pid?{partner_id:pid}:{};
+        if(!pid&&tx.partner&&tx.partner.trim()){const r=await kw('res.partner','search_read',[[['name','ilike',tx.partner.trim()]]],{fields:['id','name'],limit:5});const exact=r.find(p=>p.name.toLowerCase()===tx.partner.toLowerCase().trim());pid=(exact||r[0])?.id||false;if(pid&&S.partners[tx.merchantKey]){S.partners[tx.merchantKey].odooId=pid;S.partners[tx.merchantKey].status='ok';}if(!pid)addLog('in',`Partner "${tx.partner}" not in Odoo`);}
+        const ref=`${tx.date} ${tx.description}`.slice(0,256);const lkw=pid?{partner_id:pid}:{};
         const vals={
           journal_id:jid,date:tx.date,ref,move_type:'entry',
+          ...(companyId2?{company_id:companyId2}:{}),
           line_ids:[
-            // Dr 130001 Creditors (with partner)
             [0,0,{account_id:credId,name:tx.description.slice(0,256),debit:tx.amount,credit:0,...lkw}],
-            // Cr CC account (with partner)
             [0,0,{account_id:ccId,name:tx.description.slice(0,256),debit:0,credit:tx.amount,...lkw}],
           ]
         };
         const mid=await kw('account.move','create',[vals]);
-        addLog('ok',`✓ Move ${mid}: ${tx.date} ${tx.description.slice(0,36)} ₹${tx.amount}${pid?' [partner ✓]':''}`);
-        ok++;
+        addLog('ok',`✓ Move ${mid}: ${tx.date} ${tx.description.slice(0,36)} ₹${tx.amount}${pid?' [partner ✓]':''}`);ok++;
       }catch(e){addLog('er',`✗ ${tx.description.slice(0,36)}: ${e.message}`);err++;}
     }
-    svP(); // save updated partner IDs
-    toast(`Posted ${ok} entries${err?`, ${err} failed`:''}`,err?'er':'ok');
+    svP();toast(`Posted ${ok} entries${err?`, ${err} failed`:''}`,err?'er':'ok');
   }catch(e){addLog('er',e.message);toast(e.message,'er');setConn(false);}
   finally{btn.disabled=false;btn.innerHTML='Post to Odoo';}
 }
 
-/* ══ CSV ══════════════════════════════════════════════════════════════ */
 function expCSV(){
   if(!S.txns.length){toast('No transactions','er');return;}
   const rows=[['Date','Merchant','Description','Amount','CC Account','FY','Partner','Partner Status'],...S.txns.map(t=>[t.date,t.merchantKey,t.description,t.amount,t.ccAccount||S.activeCc,t.fy||S.activeFy,t.partner,t.pStatus])];
@@ -1332,16 +900,15 @@ function expCSV(){
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='cc-transactions.csv';a.click();toast('CSV exported');
 }
 
-/* ══ PYTHON FALLBACK ══════════════════════════════════════════════════ */
 function dlPy(){
   const sel=S.txns.filter(t=>t.include);
   const txData=JSON.stringify(sel.map(t=>({date:t.date,description:t.description,amount:t.amount,cc_account:t.ccAccount||S.activeCc,partner:t.partner||'',partner_odoo_id:t.odooId||null})),null,2);
   const py=`#!/usr/bin/env python3
-"""CC Statement -> Odoo | python3 cc_to_odoo.py
-Dr: 130001 Creditors (with partner) / Cr: CC account (with partner)"""
+"""CC Statement -> Odoo | python3 cc_to_odoo.py"""
 import xmlrpc.client
 URL="${S.cfg.url}"; DB="${S.cfg.db}"; USER="${S.cfg.user}"; PWD="${S.cfg.pass}"
 JOURNAL="${S.cfg.jnl||'Miscellaneous Operations'}"; CRED_CODE="130001"
+COMPANY_NAME="${S.cfg.company||''}"
 TRANSACTIONS=${txData}
 
 c=xmlrpc.client.ServerProxy(f'{URL}/xmlrpc/2/common')
@@ -1349,7 +916,15 @@ uid=c.authenticate(DB,USER,PWD,{})
 if not uid: raise SystemExit("Auth failed")
 m=xmlrpc.client.ServerProxy(f'{URL}/xmlrpc/2/object')
 def sr(model,domain,fields,limit=1): return m.execute_kw(DB,uid,PWD,model,'search_read',[domain],{'fields':fields,'limit':limit})
-jid=sr('account.journal',[['name','=',JOURNAL]],['id'])[0]['id']
+jres=sr('account.journal',[['name','=',JOURNAL]],['id','company_id'])
+if not jres: raise SystemExit(f"Journal '{JOURNAL}' not found")
+jid=jres[0]['id']
+company_id=jres[0]['company_id'][0] if jres[0].get('company_id') else False
+if COMPANY_NAME:
+    cos=sr('res.company',[['name','ilike',COMPANY_NAME]],['id','name'],5)
+    exact=[x for x in cos if x['name'].lower()==COMPANY_NAME.lower()]
+    match=(exact or cos)
+    if match: company_id=match[0]['id']; print(f"Company: {match[0]['name']} (ID {company_id})")
 cred_id=sr('account.account',[['code','=',CRED_CODE]],['id'])[0]['id']
 cc_cache={}; p_cache={}
 def get_cc(code):
@@ -1370,9 +945,9 @@ for tx in TRANSACTIONS:
         pid=get_partner(tx.get('partner',''), tx.get('partner_odoo_id'))
         ref=f"{tx['date']} {tx['description']}"[:256]
         lkw={'partner_id':pid} if pid else {}
-        vals={'journal_id':jid,'date':tx['date'],'ref':ref,'move_type':'entry',
-              'line_ids':[(0,0,{'account_id':cred_id,'name':tx['description'][:256],'debit':tx['amount'],'credit':0,**lkw}),
-                          (0,0,{'account_id':cc_id,'name':tx['description'][:256],'debit':0,'credit':tx['amount'],**lkw})]}
+        base={'journal_id':jid,'date':tx['date'],'ref':ref,'move_type':'entry'}
+        if company_id: base['company_id']=company_id
+        vals={**base,'line_ids':[(0,0,{'account_id':cred_id,'name':tx['description'][:256],'debit':tx['amount'],'credit':0,**lkw}),(0,0,{'account_id':cc_id,'name':tx['description'][:256],'debit':0,'credit':tx['amount'],**lkw})]}
         mid=m.execute_kw(DB,uid,PWD,'account.move','create',[vals])
         print(f"  ✓ Move {mid}: {tx['date']} {tx['description'][:40]} Rs.{tx['amount']}"); ok+=1
     except Exception as e: print(f"  ✗ {tx.get('description','?')[:40]}: {e}"); err+=1
@@ -1380,339 +955,124 @@ print(f"\\nDone: {ok} created, {err} failed")`;
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([py],{type:'text/plain'}));a.download='cc_to_odoo.py';a.click();toast('Script downloaded');
 }
 
-/* ══ UTILS ═══════════════════════════════════════════════════════════ */
 function uid(){return Math.random().toString(36).slice(2,10);}
 function g(id){return document.getElementById(id);}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function inr(n){return'₹'+(+n||0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});}
-function upBadges(){
-  const nu=S.txns.filter(t=>!t.partner).length;
-  const nb=g('nb-u');nb.classList.toggle('hidden',!nu);nb.textContent=nu;
-  const np=Object.values(S.partners).filter(p=>p.name).length;
-  g('nb-p').textContent=np;
-}
-function toast(msg,type=''){
-  const c=g('toast');const el=document.createElement('div');el.className='ti '+type;el.textContent=msg;
-  c.appendChild(el);setTimeout(()=>el.classList.add('show'),10);
-  setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),300);},5000);
-}
-function addLog(type,msg){
-  const el=g('logp');el.style.display='block';
-  const d=document.createElement('div');d.className='ll '+type;
-  d.textContent=`[${new Date().toLocaleTimeString()}] ${msg}`;
-  el.appendChild(d);el.scrollTop=el.scrollHeight;
-}
+function upBadges(){const nu=S.txns.filter(t=>!t.partner).length;const nb=g('nb-u');nb.classList.toggle('hidden',!nu);nb.textContent=nu;const np=Object.values(S.partners).filter(p=>p.name).length;g('nb-p').textContent=np;}
+function toast(msg,type=''){const c=g('toast');const el=document.createElement('div');el.className='ti '+type;el.textContent=msg;c.appendChild(el);setTimeout(()=>el.classList.add('show'),10);setTimeout(()=>{el.classList.remove('show');setTimeout(()=>el.remove(),300);},5000);}
+function addLog(type,msg){const el=g('logp');el.style.display='block';const d=document.createElement('div');d.className='ll '+type;d.textContent=`[${new Date().toLocaleTimeString()}] ${msg}`;el.appendChild(d);el.scrollTop=el.scrollHeight;}
 function showMo(id){g(id).classList.add('show');}
 function closeMo(id){g(id).classList.remove('show');}
 
-/* ══ STEP RENDERER ════════════════════════════════════════════════════ */
-const FETCH_STEPS = [
-  {id:'auth',   label:'Connecting to Odoo',         icon:'🔗'},
-  {id:'find',   label:'Resolving CC accounts',       icon:'🔍'},
-  {id:'search', label:'Searching journal entries',   icon:'📋'},
-  {id:'read',   label:'Reading move details',        icon:'📥'},
-  {id:'match',  label:'Matching with statement',     icon:'⚙️'},
-  {id:'done',   label:'Fetch complete',              icon:'✨'}
-];
-const POST_STEPS = [
-  {id:'auth',    label:'Connecting to Odoo',        icon:'🔗'},
-  {id:'journal', label:'Verifying journal & accounts', icon:'📒'},
-  {id:'partner', label:'Resolving partners',        icon:'👥'},
-  {id:'post',    label:'Creating journal entries',  icon:'📝'},
-  {id:'done',    label:'Post complete',             icon:'✨'}
-];
+const FETCH_STEPS=[{id:'auth',label:'Connecting to Odoo',icon:'🔗'},{id:'find',label:'Resolving CC accounts',icon:'🔍'},{id:'search',label:'Searching journal entries',icon:'📋'},{id:'read',label:'Reading move details',icon:'📥'},{id:'match',label:'Matching with statement',icon:'⚙️'},{id:'done',label:'Fetch complete',icon:'✨'}];
+const POST_STEPS=[{id:'auth',label:'Connecting to Odoo',icon:'🔗'},{id:'journal',label:'Verifying journal & accounts',icon:'📒'},{id:'partner',label:'Resolving partners',icon:'👥'},{id:'post',label:'Creating journal entries',icon:'📝'},{id:'done',label:'Post complete',icon:'✨'}];
 
-function renderSteps(containerId, steps, currentStep, isDone, msgMap, badgeMap){
-  const el = g(containerId); if(!el) return;
-  const idx = steps.findIndex(s=>s.id===currentStep);
-  el.innerHTML = steps.map((s,i)=>{
-    const done    = isDone || i < idx;
-    const active  = !isDone && s.id === currentStep;
-    const pending = !done && !active;
-    const cls     = done?'done':active?'active':'pending';
-    const msg     = msgMap?.[s.id]||'';
-    const badge   = badgeMap?.[s.id];
-    return `<div class="step-row${active?' active':''}">
-      <div class="step-dot ${cls}">${done?'✓':active?'<span class="spin-sm"></span>':(i+1)}</div>
-      <div style="flex:1">
-        <div class="step-lbl ${cls}">${s.icon} ${s.label}</div>
-        ${msg?`<div class="step-sub">${msg}</div>`:''}
-      </div>
-      ${badge!==undefined?`<span class="step-badge${badge.cls?' '+badge.cls:''}">${badge.text}</span>`:''}
-    </div>`;
+function renderSteps(containerId,steps,currentStep,isDone,msgMap,badgeMap){
+  const el=g(containerId);if(!el)return;
+  const idx=steps.findIndex(s=>s.id===currentStep);
+  el.innerHTML=steps.map((s,i)=>{
+    const done=isDone||i<idx;const active=!isDone&&s.id===currentStep;const pending=!done&&!active;const cls=done?'done':active?'active':'pending';
+    const msg=msgMap?.[s.id]||'';const badge=badgeMap?.[s.id];
+    return`<div class="step-row${active?' active':''}"><div class="step-dot ${cls}">${done?'✓':active?'<span class="spin-sm"></span>':(i+1)}</div><div style="flex:1"><div class="step-lbl ${cls}">${s.icon} ${s.label}</div>${msg?`<div class="step-sub">${msg}</div>`:''}</div>${badge!==undefined?`<span class="step-badge${badge.cls?' '+badge.cls:''}">${badge.text}</span>`:''}</div>`;
   }).join('');
 }
 
-/* ══ FETCH FROM ODOO ══════════════════════════════════════════════════ */
-let _fetchStep='', _fetchMsg={}, _fetchBadge={}, _fetchDone=false;
-
+let _fetchStep='',_fetchMsg={},_fetchBadge={},_fetchDone=false;
 function openFetchModal(){
-  // Pre-fill dates from loaded transactions
-  if(S.txns.length){
-    const dates=S.txns.map(t=>t.date).filter(Boolean).sort();
-    if(dates.length){g('fetch-from').value=dates[0];g('fetch-to').value=dates[dates.length-1];}
-  } else {
-    // default: current month
-    const now=new Date();
-    const y=now.getFullYear(),m=String(now.getMonth()+1).padStart(2,'0');
-    g('fetch-from').value=`${y}-${m}-01`;
-    g('fetch-to').value=`${y}-${m}-${new Date(y,now.getMonth()+1,0).getDate().toString().padStart(2,'0')}`;
-  }
-  g('fetch-cfg').classList.remove('hidden');
-  g('fetch-prog').classList.add('hidden');
-  showMo('mo-fetch');
+  if(S.txns.length){const dates=S.txns.map(t=>t.date).filter(Boolean).sort();if(dates.length){g('fetch-from').value=dates[0];g('fetch-to').value=dates[dates.length-1];}}
+  else{const now=new Date();const y=now.getFullYear(),m=String(now.getMonth()+1).padStart(2,'0');g('fetch-from').value=`${y}-${m}-01`;g('fetch-to').value=`${y}-${m}-${new Date(y,now.getMonth()+1,0).getDate().toString().padStart(2,'0')}`;}
+  g('fetch-cfg').classList.remove('hidden');g('fetch-prog').classList.add('hidden');showMo('mo-fetch');
 }
 function closeFetchModal(){closeMo('mo-fetch');_fetchDone=false;_fetchStep='';_fetchMsg={};_fetchBadge={};}
 
 async function startFetch(){
   if(!S.cfg.url||!S.cfg.db){toast('Configure Odoo settings first','er');closeMo('mo-fetch');nav(document.querySelector('[data-view=settings]'));return;}
-  const fromDate=g('fetch-from').value, toDate=g('fetch-to').value;
-  if(!fromDate||!toDate){toast('Select date range','er');return;}
-
-  // Switch to progress view
-  g('fetch-cfg').classList.add('hidden');
-  g('fetch-prog').classList.remove('hidden');
-  g('fetch-done-area').classList.add('hidden');
-  g('fetch-spin-area').style.display='flex';
-  _fetchDone=false; _fetchStep='auth'; _fetchMsg={}; _fetchBadge={};
-  renderSteps('fetch-steps',FETCH_STEPS,_fetchStep,false,_fetchMsg,_fetchBadge);
-
-  const setStep=(id,msg,badge)=>{
-    _fetchStep=id;
-    if(msg) _fetchMsg[id]=msg;
-    if(badge) _fetchBadge[id]=badge;
-    renderSteps('fetch-steps',FETCH_STEPS,id,false,_fetchMsg,_fetchBadge);
-  };
-
+  const fromDate=g('fetch-from').value,toDate=g('fetch-to').value;if(!fromDate||!toDate){toast('Select date range','er');return;}
+  g('fetch-cfg').classList.add('hidden');g('fetch-prog').classList.remove('hidden');g('fetch-done-area').classList.add('hidden');g('fetch-spin-area').style.display='flex';
+  _fetchDone=false;_fetchStep='auth';_fetchMsg={};_fetchBadge={};renderSteps('fetch-steps',FETCH_STEPS,_fetchStep,false,_fetchMsg,_fetchBadge);
+  const setStep=(id,msg,badge)=>{_fetchStep=id;if(msg)_fetchMsg[id]=msg;if(badge)_fetchBadge[id]=badge;renderSteps('fetch-steps',FETCH_STEPS,id,false,_fetchMsg,_fetchBadge);};
   try{
-    // Step 1 – Auth
-    setStep('auth','Authenticating…');
-    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});
-    if(!auth?.uid) throw new Error('Authentication failed — check credentials in Settings');
-    setConn(true);
-    _fetchMsg['auth']=`UID ${auth.uid}`;
-
-    // Step 2 – Resolve CC account IDs
-    setStep('find','Looking up CC account codes…');
-    const ccSel=g('fetch-cc-sel').value;
-    const codes=ccSel==='all'
-      ? [S.cfg.cc1||'124101',S.cfg.cc2||'124102',S.cfg.cc3||'124104']
-      : [ccSel];
-    const ccAccs=await kw('account.account','search_read',[[['code','in',codes]]],{fields:['id','code','name']});
-    if(!ccAccs.length) throw new Error(`No accounts found for codes: ${codes.join(', ')}`);
-    const ccIds=ccAccs.map(a=>a.id);
-    _fetchMsg['find']=`${ccAccs.map(a=>a.code+' '+a.name).join(' · ')}`;
-    _fetchBadge['find']={text:ccAccs.length+' accts'};
-
-    // Step 3 – Search journal entries
+    setStep('auth','Authenticating…');const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});if(!auth?.uid)throw new Error('Authentication failed');setConn(true);_fetchMsg['auth']=`UID ${auth.uid}`;
+    setStep('find','Looking up CC account codes…');const ccSel=g('fetch-cc-sel').value;const codes=ccSel==='all'?[S.cfg.cc1||'124101',S.cfg.cc2||'124102',S.cfg.cc3||'124104']:[ccSel];
+    const ccAccs=await kw('account.account','search_read',[[['code','in',codes]]],{fields:['id','code','name']});if(!ccAccs.length)throw new Error(`No accounts found for codes: ${codes.join(', ')}`);
+    const ccIds=ccAccs.map(a=>a.id);_fetchMsg['find']=`${ccAccs.map(a=>a.code+' '+a.name).join(' · ')}`;_fetchBadge['find']={text:ccAccs.length+' accts'};
     setStep('search',`Searching moves ${fromDate} → ${toDate}…`);
-    const domain=[
-      ['account_id','in',ccIds],
-      ['date','>=',fromDate],['date','<=',toDate],
-      ['move_id.state','=','posted']
-    ];
-    const lineIds=await kw('account.move.line','search',[domain],{limit:2000});
-    _fetchBadge['search']={text:lineIds.length+' lines'};
-    if(!lineIds.length){
-      // nothing found — still complete gracefully
-      _fetchMsg['search']='No posted entries found in this date range';
-      setStep('match','No Odoo entries to match');
-      _fetchDone=true;
-      renderSteps('fetch-steps',FETCH_STEPS,'done',true,_fetchMsg,_fetchBadge);
-      g('fetch-spin-area').style.display='none';
-      g('fetch-done-area').classList.remove('hidden');
-      g('fetch-summary').innerHTML=`<span style="color:var(--gn)">✓ Done.</span> No posted CC entries found in Odoo for this period. Your statement transactions have no duplicates to flag.`;
-      return;
-    }
-
-    // Step 4 – Read move details
-    setStep('read',`Reading ${lineIds.length} line details…`);
-    // Fetch in batches of 200 to avoid timeouts
-    const allLines=[];
-    const batchSize=200;
-    for(let i=0;i<lineIds.length;i+=batchSize){
-      const batch=lineIds.slice(i,i+batchSize);
-      const lines=await kw('account.move.line','read',[batch],{fields:['id','move_id','name','date','credit','account_id','ref']});
-      allLines.push(...lines);
-      _fetchMsg['read']=`Read ${Math.min(i+batchSize,lineIds.length)} of ${lineIds.length}…`;
-      renderSteps('fetch-steps',FETCH_STEPS,'read',false,_fetchMsg,_fetchBadge);
-    }
+    const domain=[['account_id','in',ccIds],['date','>=',fromDate],['date','<=',toDate],['move_id.state','=','posted']];
+    const lineIds=await kw('account.move.line','search',[domain],{limit:2000});_fetchBadge['search']={text:lineIds.length+' lines'};
+    if(!lineIds.length){_fetchMsg['search']='No posted entries found in this date range';setStep('match','No Odoo entries to match');_fetchDone=true;renderSteps('fetch-steps',FETCH_STEPS,'done',true,_fetchMsg,_fetchBadge);g('fetch-spin-area').style.display='none';g('fetch-done-area').classList.remove('hidden');g('fetch-summary').innerHTML=`<span style="color:var(--gn)">✓ Done.</span> No posted CC entries found — no duplicates to flag.`;return;}
+    setStep('read',`Reading ${lineIds.length} line details…`);const allLines=[];const batchSize=200;
+    for(let i=0;i<lineIds.length;i+=batchSize){const batch=lineIds.slice(i,i+batchSize);const lines=await kw('account.move.line','read',[batch],{fields:['id','move_id','name','date','credit','account_id','ref']});allLines.push(...lines);_fetchMsg['read']=`Read ${Math.min(i+batchSize,lineIds.length)} of ${lineIds.length}…`;renderSteps('fetch-steps',FETCH_STEPS,'read',false,_fetchMsg,_fetchBadge);}
     _fetchBadge['read']={text:allLines.length+' lines',cls:'gn'};
-
-    // Build a set of Odoo ref strings for duplicate matching
-    const odooRefs=new Set();
-    const odooEntries=[];
-    allLines.forEach(l=>{
-      const ref=(l.ref||l.name||'').trim().toLowerCase();
-      const desc=(l.name||'').trim().toLowerCase();
-      if(ref) odooRefs.add(ref);
-      if(desc) odooRefs.add(desc);
-      odooEntries.push({date:l.date,name:l.name,ref:l.ref,credit:l.credit,move_id:l.move_id?.[0]});
-    });
-
-    // Step 5 – Match
-    setStep('match','Matching with statement transactions…');
-    let dupCount=0, alreadyCount=0;
-    S.txns.forEach(tx=>{
-      const txRef=`${tx.date} ${tx.description}`.toLowerCase().slice(0,60);
-      const txDesc=tx.description.toLowerCase();
-      // Check if any Odoo entry ref or name matches this transaction closely
-      const isDup=odooEntries.some(oe=>{
-        const oeRef=(oe.ref||'').toLowerCase();
-        const oeName=(oe.name||'').toLowerCase();
-        const dateMatch=oe.date===tx.date;
-        // Match by amount + date OR by description substring
-        const amtMatch=Math.abs((oe.credit||0)-tx.amount)<1;
-        const nameMatch=oeName.length>4&&txDesc.includes(oeName.slice(0,Math.min(oeName.length,20)));
-        const refMatch=oeRef.length>8&&oeRef.includes(tx.date);
-        return dateMatch&&amtMatch || (nameMatch&&dateMatch) || (refMatch&&amtMatch);
-      });
-      if(isDup){tx.alreadyInOdoo=true;dupCount++;}
-      else{tx.alreadyInOdoo=false;}
-    });
-    S.txns.filter(t=>t.alreadyInOdoo).length; // just reference
-    svT();
-    _fetchBadge['match']={text:dupCount+' dups',cls:dupCount?'aw':'gn'};
-    _fetchMsg['match']=dupCount?`${dupCount} transaction(s) already posted in Odoo — highlighted in table`:'No duplicates found ✓';
-
-    // Complete
-    _fetchDone=true;
-    renderSteps('fetch-steps',FETCH_STEPS,'done',true,_fetchMsg,_fetchBadge);
-    g('fetch-spin-area').style.display='none';
-    g('fetch-done-area').classList.remove('hidden');
-    alreadyCount=S.txns.filter(t=>t.alreadyInOdoo).length;
-    g('fetch-summary').innerHTML=`
-      <div style="font-weight:600;color:var(--gn);margin-bottom:6px">✓ Fetch complete</div>
-      <div style="display:flex;flex-direction:column;gap:4px;font-size:12px">
-        <div>📋 Odoo entries scanned: <strong style="font-family:var(--mn)">${allLines.length}</strong></div>
-        <div>⚠️ Duplicate matches: <strong style="font-family:var(--mn);color:${alreadyCount?'var(--aw)':'var(--gn)'}">${alreadyCount}</strong>${alreadyCount?' — shown with orange background in Transactions':'  — all clear!'}</div>
-        <div style="color:var(--t2);font-size:11px;margin-top:4px">Tip: Uncheck orange rows before posting to avoid duplicates.</div>
-      </div>`;
-    if(g('view-transactions').classList.contains('active')) rT();
-    toast(`Fetch done: ${alreadyCount} duplicate(s) flagged`,alreadyCount?'aw':'ok');
+    const odooRefs=new Set();const odooEntries=[];
+    allLines.forEach(l=>{const ref=(l.ref||l.name||'').trim().toLowerCase();const desc=(l.name||'').trim().toLowerCase();if(ref)odooRefs.add(ref);if(desc)odooRefs.add(desc);odooEntries.push({date:l.date,name:l.name,ref:l.ref,credit:l.credit,move_id:l.move_id?.[0]});});
+    setStep('match','Matching with statement transactions…');let dupCount=0;
+    S.txns.forEach(tx=>{const txDesc=tx.description.toLowerCase();const isDup=odooEntries.some(oe=>{const oeRef=(oe.ref||'').toLowerCase();const oeName=(oe.name||'').toLowerCase();const dateMatch=oe.date===tx.date;const amtMatch=Math.abs((oe.credit||0)-tx.amount)<1;const nameMatch=oeName.length>4&&txDesc.includes(oeName.slice(0,Math.min(oeName.length,20)));const refMatch=oeRef.length>8&&oeRef.includes(tx.date);return dateMatch&&amtMatch||(nameMatch&&dateMatch)||(refMatch&&amtMatch);});if(isDup){tx.alreadyInOdoo=true;dupCount++;}else tx.alreadyInOdoo=false;});
+    svT();_fetchBadge['match']={text:dupCount+' dups',cls:dupCount?'aw':'gn'};_fetchMsg['match']=dupCount?`${dupCount} transaction(s) already in Odoo — highlighted`:'No duplicates ✓';
+    _fetchDone=true;renderSteps('fetch-steps',FETCH_STEPS,'done',true,_fetchMsg,_fetchBadge);g('fetch-spin-area').style.display='none';g('fetch-done-area').classList.remove('hidden');
+    const alreadyCount=S.txns.filter(t=>t.alreadyInOdoo).length;
+    g('fetch-summary').innerHTML=`<div style="font-weight:600;color:var(--gn);margin-bottom:6px">✓ Fetch complete</div><div style="display:flex;flex-direction:column;gap:4px;font-size:12px"><div>📋 Odoo entries scanned: <strong style="font-family:var(--mn)">${allLines.length}</strong></div><div>⚠️ Duplicate matches: <strong style="font-family:var(--mn);color:${alreadyCount?'var(--aw)':'var(--gn)'}">${alreadyCount}</strong>${alreadyCount?' — orange in Transactions':'  — all clear!'}</div><div style="color:var(--t2);font-size:11px;margin-top:4px">Tip: Uncheck orange rows before posting.</div></div>`;
+    if(g('view-transactions').classList.contains('active'))rT();toast(`Fetch done: ${alreadyCount} duplicate(s) flagged`,alreadyCount?'aw':'ok');
   }catch(e){
-    const errMsg=e.message||String(e);
-    _fetchMsg[_fetchStep]='❌ '+errMsg;
-    renderSteps('fetch-steps',FETCH_STEPS,_fetchStep,false,_fetchMsg,_fetchBadge);
-    g('fetch-spin-area').style.display='none';
-    g('fetch-done-area').classList.remove('hidden');
+    const errMsg=e.message||String(e);_fetchMsg[_fetchStep]='❌ '+errMsg;renderSteps('fetch-steps',FETCH_STEPS,_fetchStep,false,_fetchMsg,_fetchBadge);g('fetch-spin-area').style.display='none';g('fetch-done-area').classList.remove('hidden');
     g('fetch-summary').style.cssText='background:var(--rb);border:1px solid var(--rbd);border-radius:6px;padding:12px 14px;font-size:13px;margin-bottom:12px';
-    g('fetch-summary').innerHTML=`<strong style="color:var(--rd)">✗ Fetch failed</strong><br><span style="font-size:12px">${esc(errMsg)}</span>`;
-    setConn(false);
+    g('fetch-summary').innerHTML=`<strong style="color:var(--rd)">✗ Fetch failed</strong><br><span style="font-size:12px">${esc(errMsg)}</span>`;setConn(false);
   }
 }
 
-/* ══ POST MODAL ════════════════════════════════════════════════════════ */
 let _postStep='',_postMsg={},_postBadge={},_postDone=false;
-
 function openPostModal(){
-  const sel=S.txns.filter(t=>t.include);
-  if(!sel.length){toast('No transactions selected','er');return;}
+  const sel=S.txns.filter(t=>t.include);if(!sel.length){toast('No transactions selected','er');return;}
   if(!S.cfg.url||!S.cfg.db){toast('Configure Odoo settings first','er');nav(document.querySelector('[data-view=settings]'));return;}
-  // Update info bar
-  g('post-sel-count').textContent=sel.length;
-  g('post-sel-total').textContent=inr(sel.reduce((s,t)=>s+t.amount,0));
-  g('post-sel-cc').textContent=ccLabel(S.activeCc);
-  g('post-cc-preview').textContent=S.activeCc;
-  // Reset to config view
-  g('post-cfg').classList.remove('hidden');
-  g('post-prog').classList.add('hidden');
-  g('post-logp').style.display='none';
-  g('post-logp').innerHTML='';
-  showMo('mo-post');
+  g('post-sel-count').textContent=sel.length;g('post-sel-total').textContent=inr(sel.reduce((s,t)=>s+t.amount,0));g('post-sel-cc').textContent=ccLabel(S.activeCc);g('post-cc-preview').textContent=S.activeCc;
+  g('post-cfg').classList.remove('hidden');g('post-prog').classList.add('hidden');g('post-logp').style.display='none';g('post-logp').innerHTML='';showMo('mo-post');
 }
-function closePostModal(){
-  if(_postDone||!_postStep)closeMo('mo-post');
-  else if(confirm('Cancel posting?')){closeMo('mo-post');_postStep='';_postDone=false;}
-}
-
-function addPostLog(type,msg){
-  const el=g('post-logp');el.style.display='block';
-  const d=document.createElement('div');d.className='ll '+type;
-  d.textContent=`[${new Date().toLocaleTimeString()}] ${msg}`;
-  el.appendChild(d);el.scrollTop=el.scrollHeight;
-}
+function closePostModal(){if(_postDone||!_postStep)closeMo('mo-post');else if(confirm('Cancel posting?')){closeMo('mo-post');_postStep='';_postDone=false;}}
+function addPostLog(type,msg){const el=g('post-logp');el.style.display='block';const d=document.createElement('div');d.className='ll '+type;d.textContent=`[${new Date().toLocaleTimeString()}] ${msg}`;el.appendChild(d);el.scrollTop=el.scrollHeight;}
 
 async function startPost(){
-  const sel=S.txns.filter(t=>t.include);
-  if(!sel.length){toast('No transactions selected','er');return;}
-
-  // Switch to progress view
-  g('post-cfg').classList.add('hidden');
-  g('post-prog').classList.remove('hidden');
-  g('post-done-area').classList.add('hidden');
-  g('post-spin-area').style.display='flex';
-  g('post-modal-close').disabled=true;
-  _postDone=false; _postStep='auth'; _postMsg={}; _postBadge={};
-  renderSteps('post-steps',POST_STEPS,_postStep,false,_postMsg,_postBadge);
-
-  const setPostStep=(id,msg,badge)=>{
-    _postStep=id;
-    if(msg) _postMsg[id]=msg;
-    if(badge) _postBadge[id]=badge;
-    renderSteps('post-steps',POST_STEPS,id,false,_postMsg,_postBadge);
-  };
-
-  const ccCode=S.activeCc, credCode='130001';
-  let ok=0, err=0;
-
+  const sel=S.txns.filter(t=>t.include);if(!sel.length){toast('No transactions selected','er');return;}
+  g('post-cfg').classList.add('hidden');g('post-prog').classList.remove('hidden');g('post-done-area').classList.add('hidden');g('post-spin-area').style.display='flex';g('post-modal-close').disabled=true;
+  _postDone=false;_postStep='auth';_postMsg={};_postBadge={};renderSteps('post-steps',POST_STEPS,_postStep,false,_postMsg,_postBadge);
+  const setPostStep=(id,msg,badge)=>{_postStep=id;if(msg)_postMsg[id]=msg;if(badge)_postBadge[id]=badge;renderSteps('post-steps',POST_STEPS,id,false,_postMsg,_postBadge);};
+  const ccCode=S.activeCc,credCode='130001';let ok=0,err=0;
   try{
-    // Step 1 – Auth
     setPostStep('auth','Authenticating…');
-    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});
-    if(!auth?.uid) throw new Error('Authentication failed — check Odoo credentials in Settings');
-    setConn(true);
-    _postMsg['auth']=`Connected · UID ${auth.uid}`;
+    const auth=await rpc('/web/session/authenticate',{db:S.cfg.db,login:S.cfg.user,password:S.cfg.pass});if(!auth?.uid)throw new Error('Authentication failed — check Odoo credentials in Settings');setConn(true);_postMsg['auth']=`Connected · UID ${auth.uid}`;
 
-    // Step 2 – Verify journal & accounts
     setPostStep('journal','Looking up journal and accounts…');
     const jnl=S.cfg.jnl||'Miscellaneous Operations';
-    const journals=await kw('account.journal','search_read',[[['name','=',jnl]]],{fields:['id','name'],limit:1});
-    if(!journals.length) throw new Error(`Journal "${jnl}" not found in Odoo. Check Settings → Journal name.`);
+    const journals=await kw('account.journal','search_read',[[['name','=',jnl]]],{fields:['id','name','company_id'],limit:1});
+    if(!journals.length)throw new Error(`Journal "${jnl}" not found in Odoo. Check Settings → Journal name.`);
     const jid=journals[0].id;
 
-    const ccAccs=await kw('account.account','search_read',[[['code','=',ccCode]]],{fields:['id','name'],limit:1});
-    if(!ccAccs.length) throw new Error(`CC account ${ccCode} not found in Odoo chart of accounts`);
-    const ccId=ccAccs[0].id;
-
-    const credAccs=await kw('account.account','search_read',[[['code','=',credCode]]],{fields:['id','name'],limit:1});
-    if(!credAccs.length) throw new Error(`Creditor account ${credCode} not found in Odoo chart of accounts`);
-    const credId=credAccs[0].id;
-
-    _postMsg['journal']=`${jnl} · ${ccCode} ${ccAccs[0].name} · ${credCode}`;
-    _postBadge['journal']={text:'✓ OK',cls:'gn'};
-
-    // Step 3 – Partners
-    setPostStep('partner','Resolving Odoo partners…');
-    const partnerCache={};
-    let partnerHits=0;
-    for(const tx of sel){
-      const mk=tx.merchantKey;
-      if(S.partners[mk]?.odooId){partnerCache[mk]=S.partners[mk].odooId;partnerHits++;continue;}
-      if(S.partners[mk]?.name){
-        try{
-          const r=await kw('res.partner','search_read',[[['name','ilike',S.partners[mk].name.trim()]]],{fields:['id','name'],limit:5});
-          const exact=r.find(p=>p.name.toLowerCase()===S.partners[mk].name.toLowerCase().trim());
-          const pid=(exact||r[0])?.id||false;
-          if(pid){partnerCache[mk]=pid;S.partners[mk].odooId=pid;S.partners[mk].status='ok';partnerHits++;}
-        }catch(e){}
-      }
+    // ★ Resolve company_id — prefer Settings name, fall back to journal's company
+    let companyId=journals[0].company_id?.[0]||false;
+    if(S.cfg.company){
+      const cos=await kw('res.company','search_read',[[['name','ilike',S.cfg.company.trim()]]],{fields:['id','name'],limit:5});
+      const exact=cos.find(c=>c.name.toLowerCase()===S.cfg.company.toLowerCase().trim());
+      const match=exact||cos[0];
+      if(match){companyId=match.id;addPostLog('ok',`Company: ${match.name} (ID ${match.id})`);}
+      else addPostLog('in',`Company "${S.cfg.company}" not found — using journal default`);
     }
-    svP();
-    _postMsg['partner']=`${partnerHits} of ${new Set(sel.map(t=>t.merchantKey)).size} merchants resolved`;
-    _postBadge['partner']={text:partnerHits+' matched'};
 
-    // Step 4 – Create entries
-    setPostStep('post',`Creating 0 of ${sel.length} entries…`);
-    g('post-logp').style.display='block';
+    const ccAccs=await kw('account.account','search_read',[[['code','=',ccCode]]],{fields:['id','name'],limit:1});if(!ccAccs.length)throw new Error(`CC account ${ccCode} not found`);const ccId=ccAccs[0].id;
+    const credAccs=await kw('account.account','search_read',[[['code','=',credCode]]],{fields:['id','name'],limit:1});if(!credAccs.length)throw new Error(`Creditor account ${credCode} not found`);const credId=credAccs[0].id;
+    _postMsg['journal']=`${jnl} · ${ccCode} · ${credCode}${companyId?' · Co ID '+companyId:''}`;_postBadge['journal']={text:'✓ OK',cls:'gn'};
 
+    setPostStep('partner','Resolving Odoo partners…');
+    const partnerCache={};let partnerHits=0;
+    for(const tx of sel){const mk=tx.merchantKey;if(S.partners[mk]?.odooId){partnerCache[mk]=S.partners[mk].odooId;partnerHits++;continue;}if(S.partners[mk]?.name){try{const r=await kw('res.partner','search_read',[[['name','ilike',S.partners[mk].name.trim()]]],{fields:['id','name'],limit:5});const exact=r.find(p=>p.name.toLowerCase()===S.partners[mk].name.toLowerCase().trim());const pid=(exact||r[0])?.id||false;if(pid){partnerCache[mk]=pid;S.partners[mk].odooId=pid;S.partners[mk].status='ok';partnerHits++;}}catch(e){}}}
+    svP();_postMsg['partner']=`${partnerHits} of ${new Set(sel.map(t=>t.merchantKey)).size} merchants resolved`;_postBadge['partner']={text:partnerHits+' matched'};
+
+    setPostStep('post',`Creating 0 of ${sel.length} entries…`);g('post-logp').style.display='block';
     for(const tx of sel){
       try{
         const pid=partnerCache[tx.merchantKey]||false;
-        const ref=`${tx.date} ${tx.description}`.slice(0,256);
-        const lkw=pid?{partner_id:pid}:{};
+        const ref=`${tx.date} ${tx.description}`.slice(0,256);const lkw=pid?{partner_id:pid}:{};
         const vals={
           journal_id:jid,date:tx.date,ref,move_type:'entry',
+          ...(companyId?{company_id:companyId}:{}),
           line_ids:[
             [0,0,{account_id:credId,name:tx.description.slice(0,256),debit:tx.amount,credit:0,...lkw}],
             [0,0,{account_id:ccId,name:tx.description.slice(0,256),debit:0,credit:tx.amount,...lkw}],
@@ -1720,75 +1080,35 @@ async function startPost(){
         };
         const mid=await kw('account.move','create',[vals]);
         addPostLog('ok',`✓ Move ${mid}: ${tx.date} ${tx.description.slice(0,36)} ${inr(tx.amount)}${pid?' [partner ✓]':''}`);
-        // Mark as posted
-        tx.postedToOdoo=true;
-        ok++;
-        _postMsg['post']=`Created ${ok} of ${sel.length} entries…`;
-        renderSteps('post-steps',POST_STEPS,'post',false,_postMsg,_postBadge);
-      }catch(e){
-        addPostLog('er',`✗ ${tx.description.slice(0,36)}: ${e.message}`);
-        err++;
-      }
+        tx.postedToOdoo=true;ok++;
+        _postMsg['post']=`Created ${ok} of ${sel.length} entries…`;renderSteps('post-steps',POST_STEPS,'post',false,_postMsg,_postBadge);
+      }catch(e){addPostLog('er',`✗ ${tx.description.slice(0,36)}: ${e.message}`);err++;}
     }
-    svP(); svT();
-    _postBadge['post']={text:ok+' posted',cls:err?'aw':'gn'};
-
-    // Done
-    _postDone=true;
-    renderSteps('post-steps',POST_STEPS,'done',true,_postMsg,_postBadge);
-    g('post-spin-area').style.display='none';
-    g('post-done-area').classList.remove('hidden');
-    const summEl=g('post-summary');
-    summEl.style.cssText=`background:${err?'var(--awb)':'var(--gb)'};border:1px solid ${err?'var(--awd)':'var(--gd)'};border-radius:6px;padding:12px 14px;font-size:13px;margin-bottom:12px`;
-    summEl.innerHTML=`<div style="font-weight:600;color:${err?'var(--aw)':'var(--gn)'};margin-bottom:4px">${err?'⚠':'✓'} Posting complete</div>
-      <div style="font-size:12px;display:flex;flex-direction:column;gap:3px">
-        <div>✓ Successfully posted: <strong style="font-family:var(--mn);color:var(--gn)">${ok}</strong></div>
-        ${err?`<div>✗ Failed: <strong style="font-family:var(--mn);color:var(--rd)">${err}</strong> — see log below</div>`:''}
-      </div>`;
-    g('post-modal-close').disabled=false;
-    toast(`Posted ${ok} entries${err?`, ${err} failed`:''}`,err?'aw':'ok');
-    if(g('view-transactions').classList.contains('active')) rT();
+    svP();svT();_postBadge['post']={text:ok+' posted',cls:err?'aw':'gn'};
+    _postDone=true;renderSteps('post-steps',POST_STEPS,'done',true,_postMsg,_postBadge);g('post-spin-area').style.display='none';g('post-done-area').classList.remove('hidden');
+    const summEl=g('post-summary');summEl.style.cssText=`background:${err?'var(--awb)':'var(--gb)'};border:1px solid ${err?'var(--awd)':'var(--gd)'};border-radius:6px;padding:12px 14px;font-size:13px;margin-bottom:12px`;
+    summEl.innerHTML=`<div style="font-weight:600;color:${err?'var(--aw)':'var(--gn)'};margin-bottom:4px">${err?'⚠':'✓'} Posting complete</div><div style="font-size:12px;display:flex;flex-direction:column;gap:3px"><div>✓ Posted: <strong style="font-family:var(--mn);color:var(--gn)">${ok}</strong></div>${err?`<div>✗ Failed: <strong style="font-family:var(--mn);color:var(--rd)">${err}</strong></div>`:''}</div>`;
+    g('post-modal-close').disabled=false;toast(`Posted ${ok} entries${err?`, ${err} failed`:''}`,err?'aw':'ok');if(g('view-transactions').classList.contains('active'))rT();
   }catch(e){
-    const errMsg=e.message||String(e);
-    _postMsg[_postStep]='❌ '+errMsg;
-    renderSteps('post-steps',POST_STEPS,_postStep,false,_postMsg,_postBadge);
-    g('post-spin-area').style.display='none';
-    g('post-done-area').classList.remove('hidden');
-    const summEl=g('post-summary');
-    summEl.style.cssText='background:var(--rb);border:1px solid var(--rbd);border-radius:6px;padding:12px 14px;font-size:13px;margin-bottom:12px';
+    const errMsg=e.message||String(e);_postMsg[_postStep]='❌ '+errMsg;renderSteps('post-steps',POST_STEPS,_postStep,false,_postMsg,_postBadge);g('post-spin-area').style.display='none';g('post-done-area').classList.remove('hidden');
+    const summEl=g('post-summary');summEl.style.cssText='background:var(--rb);border:1px solid var(--rbd);border-radius:6px;padding:12px 14px;font-size:13px;margin-bottom:12px';
     summEl.innerHTML=`<strong style="color:var(--rd)">✗ Post failed</strong><br><span style="font-size:12px;white-space:pre-wrap">${esc(errMsg)}</span>`;
-    g('post-modal-close').disabled=false;
-    setConn(false);
-    toast('Post failed: '+errMsg.slice(0,60),'er');
+    g('post-modal-close').disabled=false;setConn(false);toast('Post failed: '+errMsg.slice(0,60),'er');
   }
 }
 
-/* ══ LAUNCHER DOWNLOAD ════════════════════════════════════════════════ */
 function dlLauncher(){
   const htmlFile=window.location.pathname.split('/').pop()||'cc-odoo-app-v2.html';
-  const bat=`@echo off\r\ntitle CC-Odoo Launcher\r\ncolor 0A\r\necho.\r\necho  Starting CC-Odoo local server...\r\necho  Keep this window open while using the app.\r\necho.\r\ncd /d "%~dp0"\r\npython --version >nul 2>&1\r\nif %errorlevel% neq 0 (\r\n    echo  ERROR: Python not found.\r\n    echo  Install from https://python.org and check Add to PATH.\r\n    pause\r\n    exit /b 1\r\n)\r\nfor /f "tokens=5" %%p in ('netstat -aon ^| findstr :8080 ^| findstr LISTENING 2^>nul') do taskkill /f /pid %%p >nul 2>&1\r\nstart "" cmd /c "timeout /t 1 /nobreak >nul & start http://localhost:8080/${htmlFile}"\r\necho  Server running at http://localhost:8080/${htmlFile}\r\necho  Close this window to stop the server.\r\necho.\r\npython -m http.server 8080\r\npause\r\n`;
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([bat],{type:'application/octet-stream'}));
-  a.download='START-CC-Odoo.bat';
-  a.click();
-  toast('Launcher downloaded — put it in the same folder as this HTML file','ok');
+  const bat=`@echo off\r\ntitle CC-Odoo Launcher\r\ncolor 0A\r\necho.\r\necho  Starting CC-Odoo local server...\r\necho  Keep this window open while using the app.\r\necho.\r\ncd /d "%~dp0"\r\npython --version >nul 2>&1\r\nif %errorlevel% neq 0 (\r\n    echo  ERROR: Python not found.\r\n    pause\r\n    exit /b 1\r\n)\r\nfor /f "tokens=5" %%p in ('netstat -aon ^| findstr :8080 ^| findstr LISTENING 2^>nul') do taskkill /f /pid %%p >nul 2>&1\r\nstart "" cmd /c "timeout /t 1 /nobreak >nul & start http://localhost:8080/${htmlFile}"\r\necho  Server running at http://localhost:8080/${htmlFile}\r\npython -m http.server 8080\r\npause\r\n`;
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([bat],{type:'application/octet-stream'}));a.download='START-CC-Odoo.bat';a.click();toast('Launcher downloaded','ok');
 }
 
-/* ══ INIT ════════════════════════════════════════════════════════════ */
 (async()=>{
   await lsLoad();
-  // Restore CC pill selection
-  document.querySelectorAll('.cc-pill').forEach(p=>{
-    p.classList.toggle('active',p.dataset.cc===S.activeCc);
-  });
-  if(g('imp-fy'))g('imp-fy').value=S.activeFy||'2024-25';
-  if(g('imp-mo'))g('imp-mo').value=S.activeMo||'';
-  if(g('imp-yr'))g('imp-yr').value=S.activeYr||new Date().getFullYear().toString();
+  document.querySelectorAll('.cc-pill').forEach(p=>{p.classList.toggle('active',p.dataset.cc===S.activeCc);});
+  if(g('imp-fy'))g('imp-fy').value=S.activeFy||'2024-25';if(g('imp-mo'))g('imp-mo').value=S.activeMo||'';if(g('imp-yr'))g('imp-yr').value=S.activeYr||new Date().getFullYear().toString();
   upBadges();rDash();
-  // Show CORS warning only when opened as file://
-  if(!IS_SERVED){
-    setTimeout(()=>toast('⚠ file:// detected — Odoo blocked. Run node server.js and open http://localhost:3004','aw'),800);
-  }
+  if(!IS_SERVED)setTimeout(()=>toast('⚠ file:// detected — Odoo blocked. Run node server.js and open http://localhost:3004','aw'),800);
 })();
 </script>
 </body>
